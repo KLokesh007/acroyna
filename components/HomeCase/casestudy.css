@@ -1,0 +1,138 @@
+.case-study-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 16px;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  
+  .sub-title {
+
+    font-size: 3rem;
+    font-weight: 900;
+    color: #111;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  .case-study-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.05);
+    margin-top: 40px;
+  }
+  
+  .case-study-image {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .case-study-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+  }
+  
+  .case-study-content {
+    flex: 1;
+    min-width: 0;
+    padding-top: 20px;
+  }
+  
+  .case-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #111;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+  
+  .case-description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #333;
+  }
+  
+  @media (max-width: 1024px) {
+    .case-study-card {
+      gap: 40px;
+      padding: 32px;
+    }
+    
+    .case-title {
+      font-size: 2.25rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .case-study-card {
+      flex-direction: column;
+      gap: 32px;
+    }
+  
+    .sub-title {
+      font-size: 2.5rem;
+    }
+  
+    .case-study-content {
+      padding-top: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .case-study-section {
+      padding: 60px 0;
+    }
+  
+    .header {
+      margin-bottom: 40px;
+    }
+  
+    .main-title {
+      font-size: 1.125rem;
+    }
+  
+    .sub-title {
+      font-size: 2rem;
+    }
+  
+    .case-study-card {
+      padding: 24px;
+    }
+  
+    .case-title {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+  
+    .case-description {
+      font-size: 1rem;
+    }
+  }
+  
+  

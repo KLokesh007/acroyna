@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.project-banner {
+  display: flex;
+  align-items: center;
+  padding: 80px 90px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap; /* Ensures content stacks on smaller screens */
+}
+
+.content {
+  max-width: 50%;
+  flex: 1 1 100%; /* Adjusts content width dynamically */
+  text-align: center; /* Centers text on smaller screens */
+}
+
+.title {
+  font-family: 'Mulish', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cta-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #444;
+}
+
+.image-section {
+  max-width: 50%;
+  flex: 1 1 100%; /* Adjusts image section width dynamically */
+  display: flex;
+  justify-content: center;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .project-banner {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-left: 0; /* Center title on smaller screens */
+    text-align: center;
+  }
+
+  .cta-button {
+    margin-left: 0; /* Center button on smaller screens */
+  }
+
+  .content, .image-section {
+    max-width: 100%; /* Ensure full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

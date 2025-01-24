@@ -1,0 +1,89 @@
+.softwaredevelopment-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.softwaredevelopment-heading {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.softwaredevelopment-subheading {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.softwaredevelopment-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.softwaredevelopment-image {
+    flex: 1;
+    max-width: 40%;
+}
+
+.softwaredevelopment-details {
+    flex: 1;
+    margin-top: 40px;
+}
+
+.softwaredevelopment-details h2 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.softwaredevelopment-details ul {
+    font-size: 18px;
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+    color: #333;
+}
+
+.softwaredevelopment-details li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.softwaredevelopment-footer h2 {
+    font-weight: 900;
+    font-size: 24px;
+    margin-top: -60px;
+    color: #000;
+}
+
+.softwaredevelopment-footer ul {
+    line-height: 1.8;
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.softwaredevelopment-footer p {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 19px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.softwaredevelopment-footer i {
+    font-weight: 600;
+    font-size: 18px;
+    color: #888;
+}

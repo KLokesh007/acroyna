@@ -1,0 +1,93 @@
+/* Form container styling */
+.form-row {
+  
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  font-family: 'Kodchasan',serif;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6c63ff; /* Change to your primary color */
+  box-shadow: 0 0 4px rgba(108, 99, 255, 0.5); /* Slight glow effect */
+}
+
+/* Checkbox row styling */
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Submit button customization */
+button.ant-btn-primary {
+  font-size: 16px;
+  font-weight: bold;
+  height: auto;
+  padding: 12px;
+  background-color: #1d176e; /* Primary button background color */
+  border: none;
+  border-radius: 25px;
+}
+
+
+
+
+
+/* Modal title styling */
+.ant-modal-title {
+  font-family: 'Mulish',serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #333333; /* Title color */
+}
+
+/* Modal content area */
+.ant-modal-content {
+  font-family: 'Mulish',serif;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Modal shadow */
+}
+
+/* Modal close button styling */
+.ant-modal-close {
+  color: #333333; /* Close button color */
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.ant-modal-close:hover {
+  color: #312f55; /* Close button hover color */
+}
+
+/* Modal footer styling (if needed) */
+.ant-modal-footer {
+  display: none; /* Hide default footer */
+}
+
+

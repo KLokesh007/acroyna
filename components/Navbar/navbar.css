@@ -1,0 +1,270 @@
+/* Navbar Base Styles */
+.navbar {
+  font-family: 'Mulish', serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Section */
+.logo-image {
+  max-width: 70px; /* Adjust width as needed */
+}
+
+/* General nav-links styling */
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding-left: 30rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #14142B;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.nav-links .divider {
+  color: black;
+  user-select: none;
+}
+
+/* Dropdown menu styles */
+.ndropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link .ndropdown-arrow {
+  margin-left: 6px;
+  font-size: 16px;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+.ndropdown:hover .ndropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.ndropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 2px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 260px;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.ndropdown:hover .ndropdown-menu {
+  display: block;
+}
+
+.ndropdown-item {
+  font-family: 'Kodchasan', serif;
+  text-decoration: none;
+  display: block;
+  padding: 6px 12px;
+  color: black;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ndropdown-item:hover {
+  background-color: #D8D8E8;
+}
+
+/* Buttons Section */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+.work-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #14142B;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.menu-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  background-color: #FFD012;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 18px;
+}
+
+.menu-icon {
+  width: 20px;
+  background-color: #14142B;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #14142B;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon::before {
+  transform: translateY(-6px);
+}
+
+.menu-icon::after {
+  transform: translateY(6px);
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0B0B45;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.dropdown-menu.active {
+  display: flex;
+}
+
+/* Dropdown Header */
+.dropdown-header {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #FFD012; /* Highlight on hover */
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  color: #FFD012; /* Highlight on hover */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the nav links */
+  }
+
+  .work-button {
+    display: block; /* Show the "Work with us" button on mobile */
+    margin-left: 1rem; /* Add some space from the edge */
+    padding: 0.75rem 1.5rem; /* Adjust padding for mobile */
+    font-size: 1rem; /* Adjust font size for better readability */
+  }
+
+  .navbar {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .logo-image {
+    max-width: 50px; /* Adjust logo size for mobile */
+  }
+
+  .nav-buttons {
+    gap: 1rem;
+  }
+
+  .menu-button {
+    display: flex; /* Show the menu button */
+  }
+
+  .menu-icon {
+    width: 20px;
+    height: 2px;
+  }
+
+  .menu-icon::before,
+  .menu-icon::after {
+    width: 20px;
+    height: 2px;
+  }
+
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .dropdown-menu a {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,81 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .dashboard-header {
+    
+    margin-bottom: 70px;
+  }
+  
+  
+  
+  .dashboard-header h1{
+    font-weight: 900;
+    font-size: 38px;
+    color: red;
+    margin-right: 1300px;}
+  
+  .dashboard-image-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dashboard-image {
+    margin-bottom: 90px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .overview-row {
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px; /* Adds spacing between rows */
+    margin-right: 90px;
+    margin-left: 200px;
+  }
+  
+  .overview-title {
+    flex: 0 0 20%;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #333;
+    text-align: left;
+  }
+  
+  .overview-text {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #555;
+    text-align: left;
+    max-width: 800px; /* Ensures readable line length */
+    padding-left: 30px; /* Creates the gap between title and text */
+  }
+  /* Styling for Image */
+
+  
+  .overview-text ul,
+  .overview-text ol {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .overview-text ul {
+    list-style-type: disc;
+  }
+  
+  .overview-text ol {
+    list-style-type: decimal;
+  }
+  
+  .overview-text li {
+    margin-bottom: 8px;
+  }
+  

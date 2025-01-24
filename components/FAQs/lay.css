@@ -1,0 +1,78 @@
+.faq-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.faq-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
+}
+
+.faq-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8c8c8c;
+  flex-shrink: 1;
+  width: 40px;
+  text-align: center;
+}
+
+.faq-question {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #000;
+  flex-grow: 2;
+  margin-left: 10px;
+}
+
+.faq-toggle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 0 20px; /* Add some padding for smaller screens */
+  }
+
+  .faq-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    gap: 10px; /* Add spacing between elements */
+  }
+
+  .faq-number {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+    width: auto;
+  }
+
+  .faq-question {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+    margin-left: 0; /* Remove left margin for better alignment */
+    text-align: left; /* Align text to the left */
+  }
+
+  .faq-toggle {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-number,
+  .faq-question,
+  .faq-toggle {
+    font-size: 1.2rem; /* Further reduce font sizes for very small screens */
+  }
+}

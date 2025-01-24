@@ -1,0 +1,130 @@
+.testimonials-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonials-title {
+  color: black;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.testimonials-subtitle {
+  color: black;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.testimonial-cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures responsive wrapping */
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eaeaea;
+  width: 30%; /* Adjust width as needed for better layout */
+  max-width: 400px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(240, 240, 242, 0.497);
+}
+
+.testimonial-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-content {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  color: #1a1a4b;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.author-title {
+  color: #666;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .testimonial-card {
+    width: 45%; /* Adjust card width for tablet-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 90%; /* Cards will take up most of the screen on smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-header {
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-title {
+    font-size: 1.5rem; /* Adjust title font size for smaller screens */
+  }
+
+  .testimonials-subtitle {
+    font-size: 2.5rem; /* Adjust subtitle font size for smaller screens */
+  }
+
+  .testimonial-cards-container {
+    flex-direction: column; /* Stack cards vertically on very small screens */
+    gap: 1rem; /* Adjust gap between cards */
+  }
+
+  .testimonial-card {
+    width: 100%; /* Make each card full-width on smaller screens */
+  }
+}
