@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-top">
           <h2 className="footer-heading">Let’s Chat</h2>
-        <button className="footer-button" onClick={() => window.location.href = '/ContactUs'}>Get in touch</button>
+        <button className="footer-button" onClick={() =>window.open("https://forms.gle/c18A2HmzV19E5SJB7", "_blank")}>Get in touch</button>
         </div>
         
         <div className="footer-content">

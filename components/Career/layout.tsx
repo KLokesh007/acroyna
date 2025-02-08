@@ -28,7 +28,7 @@ export default function CareersPage() {
                 They will collaborate with cross-functional teams to identify business opportunities, develop project plans, solve engineering problems, and create technical documentation. The ideal candidate should be passionate about technology, detail-oriented, and able to work effectively in a dynamic and fast-paced environment.
               </p>
               <div className="button-wrapper">
-                <a href="/ContactUs" className="apply-button">Apply Now</a>
+                <a href="https://forms.gle/e5EWboVu7XJ3PQTu8" className="apply-button">Apply Now</a>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function CareersPage() {
                 They will collaborate with cross-functional teams to identify business opportunities, develop project plans, solve engineering problems, and create technical documentation. The ideal candidate should be passionate about technology, detail-oriented, and able to work effectively in a dynamic and fast-paced environment.
               </p>
               <div className="button-wrapper">
-                <a href="/ContactUs" className="apply-button">Apply Now</a>
+                <a href="https://forms.gle/e5EWboVu7XJ3PQTu8" className="apply-button">Apply Now</a>
               </div>
             </div>
           </div>

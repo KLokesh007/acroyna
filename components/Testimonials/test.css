@@ -95,14 +95,32 @@
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
+  .testimonial-cards-container {
+    gap: 1.5rem; /* Reduce the gap for better layout on medium devices */
+  }
+
   .testimonial-card {
     width: 45%; /* Adjust card width for tablet-sized screens */
+  }
+
+  .testimonials-title,
+  .testimonials-subtitle {
+    text-align: center; /* Center text on tablets for consistency */
   }
 }
 
 @media (max-width: 768px) {
+  .testimonial-cards-container {
+    gap: 1.5rem; /* Adjust gap to prevent overlapping */
+  }
+
   .testimonial-card {
     width: 90%; /* Cards will take up most of the screen on smaller devices */
+  }
+
+  .testimonials-title,
+  .testimonials-subtitle {
+    text-align: center;
   }
 }
 
@@ -113,10 +131,12 @@
 
   .testimonials-title {
     font-size: 1.5rem; /* Adjust title font size for smaller screens */
+    text-align: center;
   }
 
   .testimonials-subtitle {
     font-size: 2.5rem; /* Adjust subtitle font size for smaller screens */
+    text-align: center;
   }
 
   .testimonial-cards-container {
@@ -126,5 +146,7 @@
 
   .testimonial-card {
     width: 100%; /* Make each card full-width on smaller screens */
+    padding: 1.5rem; /* Reduce padding for better layout */
+    margin: 0 auto; /* Center the cards */
   }
 }

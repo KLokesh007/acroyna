@@ -5,6 +5,10 @@
   padding: 2rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Main content area */
@@ -13,31 +17,34 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  max-width: 1200px;
-  margin: 50px auto 0;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .hero-text {
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 900px;
   margin: 0 auto;
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 3rem); /* Responsive font size */
   font-weight: 900;
   color: black;
-  line-height: 1.2;
+  line-height: 1.2; /* Adjusts spacing between lines */
+  width: 1000px; /* Limits the width to force wrapping */
+  margin: 0 auto; /* Centers the text */
+  text-align: center; /* Ensures alignment is visually appealing */
 }
+
 
 /* Sparkles section */
 .sparkles-container {
   position: relative;
   height: 10rem;
   width: 100%;
-  max-width: 900px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -56,7 +63,7 @@
 .gradient-2,
 .gradient-3,
 .gradient-4 {
-  inset-inline: 5rem;
+  inset-inline: 5%;
 }
 
 .gradient-1 {
@@ -75,7 +82,7 @@
 }
 
 .gradient-3 {
-  left: 15rem;
+  left: 15%;
   top: 0;
   background: linear-gradient(90deg, transparent, #0ea5e9, transparent);
   height: 5px;
@@ -84,7 +91,7 @@
 }
 
 .gradient-4 {
-  left: 15rem;
+  left: 15%;
   top: 0;
   background: linear-gradient(90deg, transparent, #0ea5e9, transparent);
   height: 1px;
@@ -102,7 +109,7 @@
 /* CTA section */
 .cta-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 90%;
   margin: 1rem auto;
 }
 
@@ -110,6 +117,7 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -117,6 +125,7 @@
   border-radius: 0.5rem;
   font-weight: 500;
   transition: all 0.2s ease;
+  font-size: clamp(0.8rem, 2.5vw, 1rem); /* Responsive font size */
 }
 
 .btn-primary {
@@ -156,34 +165,37 @@
 .trusted-section {
   text-align: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .trusted-title {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   font-weight: 600;
   color: #374151;
   margin-bottom: 1.5rem;
 }
 
-.trusted-logo {
-  width: 80px;
-  height: auto;
-  margin-left: 240px;
+.trusted-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Adds spacing between logos */
 }
+
+.trusted-logo {
+  width: clamp(40px, 10vw, 80px);
+  height: auto;
+}
+
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
   .hero-main {
-    max-width: 900px;
+    max-width: 90%;
   }
 
   .sparkles-container {
-    max-width: 700px;
+    max-width: 80%;
   }
 
   .button-group {
@@ -193,10 +205,6 @@
 
   .btn {
     width: 100%;
-  }
-
-  .trusted-logo {
-    width: 70px;
   }
 }
 
@@ -211,21 +219,6 @@
     margin-top: 25px;
   }
 
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .button-group {
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
   .sparkles-container {
     height: 8rem;
     max-width: 100%;
@@ -233,16 +226,12 @@
 
   .gradient-1,
   .gradient-2 {
-    inset-inline: 2rem;
+    inset-inline: 10%;
   }
 
   .gradient-3,
   .gradient-4 {
-    left: 8rem;
-  }
-
-  .trusted-logo {
-    width: 60px;
+    left: 8%;
   }
 }
 
@@ -256,34 +245,25 @@
     gap: 1rem;
   }
 
-  .hero-title {
-    font-size: 1.75rem;
-  }
-
   .sparkles-container {
     height: 6rem;
   }
 
   .gradient-1,
   .gradient-2 {
-    inset-inline: 1rem;
+    inset-inline: 5%;
   }
 
   .gradient-3,
   .gradient-4 {
-    left: 4rem;
+    left: 4%;
   }
 
   .trusted-section {
     padding: 1.5rem 0.5rem;
   }
-
-  .trusted-logo {
-    width: 50px;
-  }
 }
 
-/* Fix for very small screens */
 @media (max-width: 360px) {
   .hero-title {
     font-size: 1.5rem;

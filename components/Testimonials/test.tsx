@@ -71,7 +71,7 @@ function TestimonialCard({ logo, text, author }: TestimonialProps) {
 
 export default function Testimonials() {
     return (
-      <section className="testimonials-section">
+      <section id='testimonials'  className="testimonials-section">
         <div className="testimonials-header">
           <h2 className="testimonials-title">Our Clients Speak</h2>
           <p className="testimonials-subtitle">Our Clients’ Success, Our Pride</p>

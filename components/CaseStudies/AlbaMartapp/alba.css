@@ -1,78 +1,174 @@
 /* Center the overview mockup container */
 .overview-mockup-container {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin-bottom: 50px; /* Add spacing below */
-    margin-right: 200px;
-  }
-  
-  .overview-mockup-image {
-    height: 900px; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
-  }
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-bottom: 50px; /* Add spacing below */
+  margin-right: 200px; /* Space for large screens */
+}
+
+.overview-mockup-image {
+  height: 900px; /* Maintain aspect ratio */
+  max-width: 100%; /* Responsive width */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+}
 
 .overview-container {
-    padding: 60px;
-    margin-left: 150px;
-    line-height: 1.6;
-  }
-  
-  .overview-row {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px; /* Adds spacing between rows */
-    margin-right: 90px;
-  }
-  
-  .overview-title {
-    flex: 0 0 20%;
-    font-size: 1.2rem;
-    font-weight: 900;
-    color: #333;
-    text-align: left;
-  }
-  
-  .overview-text {
-    flex: 1;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #555;
-    text-align: left;
-    max-width: 800px; /* Ensures readable line length */
-    padding-left: 30px; /* Creates the gap between title and text */
-  }
-  /* Styling for Image */
-/* Center the overview image container */
+  padding: 60px; /* Spacious padding */
+  margin-left: 150px; /* Offset for large screens */
+  line-height: 1.6; /* Better readability */
+}
+
+/* Rows for overview section */
+.overview-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px; /* Adds spacing between rows */
+  margin-right: 90px;
+  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+.overview-title {
+  flex: 0 0 20%;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #333;
+  text-align: left;
+  margin-bottom: 10px; /* Space below for smaller screens */
+}
+
+.overview-text {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #555;
+  text-align: left;
+  max-width: 800px; /* Ensures readable line length */
+  padding-left: 30px; /* Gap between title and text */
+}
+
+/* Styling for Image */
 .overview-image-container {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin-top: 50px; /* Add spacing above */
-    min-height: 400px; /* Ensure enough vertical space */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 50px; /* Add spacing above */
+  min-height: 400px; /* Ensure enough vertical space */
+}
+
+.overview-image {
+  max-width: 90%; /* Ensure image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+}
+
+/* List styles */
+.overview-text ul,
+.overview-text ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.overview-text ul {
+  list-style-type: disc;
+}
+
+.overview-text ol {
+  list-style-type: decimal;
+}
+
+.overview-text li {
+  margin-bottom: 8px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .overview-container {
+      margin-left: 50px; /* Reduce margin for tablets */
+      padding: 40px;
   }
-  
-  .overview-image {
-    max-width: 90%; /* Ensure image is responsive */
-    height: auto; /* Maintain aspect ratio */
+
+  .overview-mockup-container {
+      margin-right: 100px;
   }
-  
-  .overview-text ul,
-  .overview-text ol {
-    margin: 10px 0;
-    padding-left: 20px;
+
+  .overview-mockup-image {
+      height: 600px; /* Scale down the image */
   }
-  
-  .overview-text ul {
-    list-style-type: disc;
+
+  .overview-row {
+      margin-right: 30px;
   }
-  
-  .overview-text ol {
-    list-style-type: decimal;
+
+  .overview-title {
+      font-size: 1rem; /* Smaller title font size */
   }
-  
-  .overview-text li {
-    margin-bottom: 8px;
+
+  .overview-text {
+      font-size: 0.9rem; /* Adjust text size */
   }
-  
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+  .overview-container {
+      margin-left: 20px; /* Further reduce margin */
+      padding: 20px;
+  }
+
+  .overview-mockup-container {
+      margin-right: 0; /* Remove right margin for small screens */
+      margin-bottom: 20px; /* Add space below */
+  }
+
+  .overview-mockup-image {
+      height: auto; /* Allow flexible height */
+      max-width: 100%; /* Image takes full width */
+  }
+
+  .overview-row {
+      flex-direction: column; /* Stack items vertically */
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .overview-title {
+      font-size: 0.9rem; /* Smaller title font */
+      text-align: center; /* Center-align titles */
+  }
+
+  .overview-text {
+      font-size: 0.8rem; /* Smaller text font */
+      padding-left: 0; /* Remove padding */
+      text-align: center; /* Center-align text */
+  }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 576px) {
+  .overview-container {
+      margin-left: 10px; /* Minimal margin */
+      padding: 10px;
+  }
+
+  .overview-mockup-image {
+      height: auto; /* Flexible height */
+      max-width: 100%; /* Full width for small screens */
+  }
+
+  .overview-title {
+      font-size: 0.8rem;
+      margin-bottom: 5px;
+  }
+
+  .overview-text {
+      font-size: 0.7rem;
+  }
+
+  .overview-row {
+      margin: 10px 0; /* Add spacing between stacked rows */
+  }
+}

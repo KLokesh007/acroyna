@@ -18,7 +18,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({ isVisible, onClose 
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value, type, checked } = e.target as HTMLInputElement;
     setFormData({
       ...formData,
       [name]: type === 'checkbox' ? checked : value,

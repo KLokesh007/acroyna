@@ -1,35 +1,48 @@
+/* Careers Container */
 .careers-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
 }
 
+/* Careers Title */
 .careers-title {
   font-size: 2.5rem;
   font-weight: 900;
   margin-bottom: 40px;
-  align-self: center;
+  text-align: center; /* Center the title for better balance */
 }
 
+/* Content Wrapper */
 .content-wrapper {
   display: flex;
   gap: 30px;
   align-items: flex-start;
+  flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
 }
 
+/* Jobs Section */
 .jobs-container {
   flex: 1;
   display: grid;
   gap: 30px;
 }
 
+/* Job Listing Cards */
 .job-listing {
   background-color: #fff;
   border-radius: 8px;
   padding: 24px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
+.job-listing:hover {
+  transform: translateY(-5px); /* Add a hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhance hover shadow */
+}
+
+/* Illustration Section */
 .illustration {
   flex-shrink: 0;
   position: relative;
@@ -39,12 +52,15 @@
 .illustration-image {
   max-width: 300px;
   height: auto;
+  border-radius: 8px;
 }
 
+/* Tags Section */
 .tags {
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
+  flex-wrap: wrap; /* Wrap tags on smaller screens */
 }
 
 .tag {
@@ -52,13 +68,18 @@
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 14px;
+  font-weight: 500;
 }
 
+/* Experience */
 .experience {
   margin-bottom: 20px;
   color: #666;
+  font-size: 14px;
+  font-weight: 600;
 }
 
+/* Role Description */
 .role-description h2 {
   font-weight: 700;
   font-size: 1.5rem;
@@ -72,6 +93,7 @@
   margin-bottom: 15px;
 }
 
+/* Apply Button */
 .apply-button {
   background-color: #14213d;
   color: white;
@@ -88,13 +110,16 @@
   transform: translateY(-2px);
 }
 
+/* Responsiveness */
+
+/* Medium Screens (Tablets) */
 @media (max-width: 968px) {
   .content-wrapper {
-    flex-direction: column;
+    flex-direction: column; /* Stack content vertically */
   }
 
   .illustration {
-    order: -1;
+    order: -1; /* Place illustration before content */
     position: static;
     margin-bottom: 20px;
   }
@@ -105,6 +130,7 @@
   }
 }
 
+/* Small Screens (Mobile) */
 @media (max-width: 768px) {
   .careers-container {
     padding: 15px;
@@ -118,23 +144,30 @@
   .job-listing {
     padding: 20px;
   }
-}
 
-.role-description {
-  position: relative;
-  padding-bottom: 50px; /* Add space for the button */
-}
+  .tags {
+    justify-content: center; /* Center-align tags */
+  }
 
-.button-wrapper {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-@media (max-width: 768px) {
   .button-wrapper {
     position: static;
-    text-align: right;
+    text-align: center; /* Center-align buttons */
     margin-top: 20px;
+  }
+}
+
+/* Extra Small Screens (Phones) */
+@media (max-width: 576px) {
+  .careers-title {
+    font-size: 1.8rem;
+  }
+
+  .job-listing {
+    padding: 15px;
+  }
+
+  .apply-button {
+    width: 100%; /* Full-width button on small screens */
+    padding: 12px;
   }
 }

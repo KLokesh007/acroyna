@@ -2,7 +2,6 @@ import Footer from "@/components/Footer/layout";
 import Navbar from "@/components/Navbar/layout";
 import ProjectBanner from "@/components/ProjectBanner/layout";
 import ScrollToTop from "@/components/ScrollTop/layout";
-import Aiml from "@/components/Services/AI/layout";
 import Ccloud from "@/components/Services/Cloud/layout";
 import React from "react";
 

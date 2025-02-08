@@ -1,77 +1,110 @@
 .footer {
-    font-family: 'Mulish', sans-serif;
-    background-color: #0a0a29;
-    color: white;
-    padding: 64px 32px;
+  font-family: 'Mulish', sans-serif;
+  background-color: #0a0a29;
+  color: white;
+  padding: 64px 32px;
+  text-align: center; /* Center the text by default for smaller screens */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  margin-bottom: 48px;
+  text-align: left; /* Align content to the left */
+}
+
+.footer-heading {
+  font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.footer-button {
+  background-color: white;
+  color: #0a0a29;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #f0f0f0; /* Button hover effect */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  text-align: left; /* Align text to the left on larger screens */
+}
+
+.footer-contact {
+  flex: 1;
+  min-width: 250px; /* Ensures the contact section has a minimum width */
+}
+
+.footer-contact p {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 64px;
+  flex-wrap: wrap; /* Wrap links on smaller screens */
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  color: #ffcc00; /* Hover color change for links */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .footer {
+      padding: 40px 20px; /* Less padding for smaller screens */
   }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+
   .footer-top {
-    margin-bottom: 48px;
+      text-align: left; /* Align heading and button to the left */
   }
-  
+
   .footer-heading {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 24px;
+      font-size: 28px; /* Adjust heading size for mobile */
   }
-  
-  .footer-button {
-    background-color: white;
-    color: #0a0a29;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 24px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
+
   .footer-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 48px;
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      gap: 30px;
   }
-  
-  .footer-contact {
-    flex: 1;
-  }
-  
-  .footer-contact p {
-    margin-bottom: 16px;
-    font-size: 14px;
-  }
-  
+
   .footer-links {
-    display: flex;
-    gap: 64px;
+      gap: 24px; /* Adjust gap between footer columns on smaller screens */
   }
-  
-  .footer-column {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  
+
   .footer-column a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
+      font-size: 16px; /* Increase font size for readability on mobile */
   }
-  
-  
-  
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-    }
-    
-    .footer-links {
-      gap: 32px;
-    }
+
+  .footer-contact p {
+      font-size: 16px; /* Increase font size for better readability */
   }
-  
-  
+}

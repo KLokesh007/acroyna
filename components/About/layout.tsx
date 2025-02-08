@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Linkedin } from 'lucide-react'
 import './about.css'
 
@@ -73,10 +72,26 @@ export default function About() {
             </div>
             
           </div>
-          <div className="trusted-by1">
-        <p>TRUSTED BY FUNDED STARTUPS</p>
-        <img src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736801385/alba_mart_yttys4.png" alt="Alba Mart Logo" />
-      </div>
+          <div className="trusted1-section">
+          <p className="trusted1-title">TRUSTED BY FUNDED STARTUPS</p>
+          <div className="trusted1-logos">
+            <img
+              className="trusted1-logo"
+              src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736801385/alba_mart_yttys4.png"
+              alt="Alba Mart Logo"
+            />
+            <img
+              className="trusted1-logo"
+              src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737369654/jyps_vhy9os.jpg"
+              alt="Placeholder Logo 1"
+            />
+            <img
+              className="trusted1-logo"
+              src="/images/merage.png"
+              alt="Placeholder Logo 2"
+            />
+          </div>
+        </div>
         </div>
       </div>
     </section>

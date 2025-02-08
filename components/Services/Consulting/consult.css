@@ -7,29 +7,35 @@
 }
 
 .consulting-heading {
-    font-size: 40px;
+    font-size: clamp(2rem, 5vw, 2.5rem); /* Responsive font size */
     font-weight: 900;
     margin-bottom: 10px;
     color: #000;
+    text-align: center;
 }
 
 .consulting-subheading {
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 1.25rem); /* Responsive font size */
     font-weight: 700;
     margin-bottom: 30px;
     color: #555;
     line-height: 1.8;
+    text-align: center;
 }
 
 .consulting-content {
     display: flex;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
     align-items: flex-start;
     gap: 30px;
+    margin-bottom: 40px;
 }
 
 .consulting-image {
     flex: 1;
     max-width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .consulting-details {
@@ -38,7 +44,7 @@
 }
 
 .consulting-details h2 {
-    font-size: 24px;
+    font-size: clamp(1.75rem, 4vw, 2rem); /* Responsive font size */
     font-weight: 900;
     margin-bottom: 15px;
     color: #000;
@@ -57,18 +63,22 @@
     line-height: 1.6;
 }
 
+.consulting-footer {
+    margin-top: 40px;
+}
+
 .consulting-footer h2 {
+    font-size: clamp(1.75rem, 4vw, 2rem); /* Responsive font size */
     font-weight: 900;
-    font-size: 24px;
+    margin-bottom: 10px;
     color: #000;
 }
 
 .consulting-footer ul {
-    line-height: 1.8;
     list-style-type: disc;
     margin: 10px 0 0 20px;
     padding: 0;
-    font-size: 18px;
+    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
     font-weight: 600;
     color: #333;
 }
@@ -76,13 +86,87 @@
 .consulting-footer p {
     margin-top: 15px;
     font-weight: 500;
-    font-size: 19px;
+    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
     color: #555;
     line-height: 1.7;
 }
 
 .consulting-footer i {
     font-weight: 600;
-    font-size: 18px;
+    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
     color: #888;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .consulting-content {
+        flex-direction: column; /* Stack content on smaller screens */
+        gap: 20px;
+    }
+
+    .consulting-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .consulting-details {
+        flex: 1;
+        margin-left: 0;
+    }
+
+    .consulting-heading {
+        font-size: 36px;
+    }
+
+    .consulting-subheading {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .consulting-heading {
+        font-size: 32px;
+    }
+
+    .consulting-subheading {
+        font-size: 15px;
+    }
+
+    .consulting-details h2 {
+        font-size: 22px;
+    }
+
+    .consulting-details ul {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .consulting-heading {
+        font-size: 28px;
+    }
+
+    .consulting-subheading {
+        font-size: 14px;
+    }
+
+    .consulting-details h2 {
+        font-size: 20px;
+    }
+
+    .consulting-details ul {
+        font-size: 14px;
+    }
+
+    .consulting-footer h2 {
+        font-size: 20px;
+    }
+
+    .consulting-footer ul {
+        font-size: 14px;
+    }
+
+    .consulting-footer p {
+        font-size: 16px;
+    }
 }

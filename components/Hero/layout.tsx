@@ -9,10 +9,10 @@ export default function HeroSection() {
       <div className="hero-main">
         <div className="hero-text">
           <h1 className="hero-title">
-            Building innovative digital
+            Building innovative digital experiences,
+            {/* <br /> */}
             <br />
-            <br />
-            experiences, tailored for your success
+            tailored for your success
           </h1>
         </div>
 
@@ -39,7 +39,7 @@ export default function HeroSection() {
 
         <div className="cta-container">
           <div className="button-group">
-            <button className="btn btn-primary" onClick={() => (window.location.href = "/ContactUs")}>
+            <button className="btn btn-primary" onClick={() => window.open("https://forms.gle/c18A2HmzV19E5SJB7", "_blank")}>
               Get a project quote
             </button>
             <a href="#CaseStudy" className="btn btn-secondary">
@@ -50,12 +50,25 @@ export default function HeroSection() {
 
         <div className="trusted-section">
           <p className="trusted-title">TRUSTED BY FUNDED STARTUPS</p>
-          <img
-            className="trusted-logo"
-            src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736801385/alba_mart_yttys4.png"
-            alt="Alba Mart Logo"
-          />
+          <div className="trusted-logos">
+            <img
+              className="trusted-logo"
+              src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736801385/alba_mart_yttys4.png"
+              alt="Alba Mart Logo"
+            />
+            <img
+              className="trusted-logo"
+              src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737369654/jyps_vhy9os.jpg"
+              alt="Placeholder Logo 1"
+            />
+            <img
+              className="trusted-logo"
+              src="/images/merage.png"
+              alt="Placeholder Logo 2"
+            />
+          </div>
         </div>
+
       </div>
     </section>
   )

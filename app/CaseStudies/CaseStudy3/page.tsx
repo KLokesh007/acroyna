@@ -1,4 +1,3 @@
-import AdminDashboard from "@/components/CaseStudies/Albaadmin/layout";
 import VTU from "@/components/CaseStudies/VtuReceipt/layout";
 import Footer from "@/components/Footer/layout";
 import Navbar from "@/components/Navbar/layout";

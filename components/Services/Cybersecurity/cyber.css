@@ -4,91 +4,143 @@
     padding: 20px;
     color: #333;
     line-height: 1.6;
-}
-
-.cybersecurity-heading {
-    font-size: 40px;
+  }
+  
+  .cybersecurity-heading {
+    font-size: clamp(2rem, 5vw, 2.5rem); /* Dynamic scaling for all screen sizes */
     font-weight: 900;
     margin-bottom: 10px;
     color: #000;
-}
-
-.cybersecurity-subheading {
-    font-size: 18px;
+    text-align: center; /* Centered heading for better focus */
+  }
+  
+  .cybersecurity-subheading {
+    font-size: clamp(1rem, 2vw, 1.25rem); /* Scales for small screens */
     font-weight: 700;
     margin-bottom: 30px;
     color: #555;
     line-height: 1.8;
-}
-
-.cybersecurity-content {
+    text-align: center;
+  }
+  
+  .cybersecurity-content {
     display: flex;
+    flex-wrap: wrap; /* Flex-wrap for responsive layouts */
     align-items: flex-start;
     gap: 30px;
     margin-bottom: 40px;
-}
-
-.cybersecurity-image {
+  }
+  
+  .cybersecurity-image {
     flex: 1;
     max-width: 30%;
     background: transparent;
     border-radius: 10px;
-}
-
-.cybersecurity-details {
+    object-fit: cover; /* Ensures images scale well */
+  }
+  
+  .cybersecurity-details {
     flex: 1;
-}
-
-.cybersecurity-details h2 {
-    font-size: 24px;
+  }
+  
+  .cybersecurity-details h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem); /* Responsive heading size */
     font-weight: 900;
     margin-bottom: 15px;
     color: #000;
-}
-
-.cybersecurity-details ul {
-    font-size: 18px;
+  }
+  
+  .cybersecurity-details ul {
+    font-size: clamp(1rem, 2vw, 1.125rem); /* Dynamic font scaling */
     list-style-type: disc;
     margin: 10px 0 0 20px;
     padding: 0;
     color: #333;
-}
-
-.cybersecurity-details li {
+  }
+  
+  .cybersecurity-details li {
     margin-bottom: 10px;
     line-height: 1.6;
-}
-
-.cybersecurity-footer {
+  }
+  
+  .cybersecurity-footer {
     margin-top: 40px;
-}
-
-.cybersecurity-footer h2 {
+  }
+  
+  .cybersecurity-footer h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 900;
-    font-size: 24px;
     margin-bottom: 10px;
     color: #000;
-}
-
-.cybersecurity-footer ul {
+  }
+  
+  .cybersecurity-footer ul {
     list-style-type: disc;
     margin: 10px 0 0 20px;
     padding: 0;
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     font-weight: 600;
     color: #333;
-}
-
-.cybersecurity-footer p {
+  }
+  
+  .cybersecurity-footer p {
     margin-top: 15px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 500;
-    font-size: 19px;
     color: #555;
     line-height: 1.6;
-}
-
-.cybersecurity-footer i {
+  }
+  
+  .cybersecurity-footer i {
+    font-size: clamp(0.9rem, 1.5vw, 1.125rem);
     font-weight: 600;
-    font-size: 18px;
     color: #888;
-}
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .cybersecurity-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .cybersecurity-image,
+    .cybersecurity-details {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cybersecurity-container {
+      padding: 15px;
+    }
+  
+    .cybersecurity-subheading {
+      margin-bottom: 20px;
+    }
+  
+    .cybersecurity-footer h2 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cybersecurity-heading {
+      font-size: 1.75rem;
+    }
+  
+    .cybersecurity-subheading {
+      font-size: 1rem;
+    }
+  
+    .cybersecurity-details ul,
+    .cybersecurity-footer ul {
+      font-size: 0.95rem;
+    }
+  
+    .cybersecurity-footer p {
+      font-size: 1rem;
+    }
+  }
+  

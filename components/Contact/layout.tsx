@@ -121,7 +121,7 @@ export default function ContactForm() {
         message: 'Thank you for your message. Your submission has been saved!'
       })
 
-    } catch (error) {
+    } catch {
       setSubmitStatus({
         type: 'error',
         message: 'Failed to save your submission. Please try again.'

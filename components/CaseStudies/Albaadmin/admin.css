@@ -7,6 +7,7 @@
 
 .dashboard-header {
   margin-bottom: 70px;
+  text-align: center; /* Center-align for all screen sizes */
 }
 
 .dashboard-header h1 {
@@ -19,7 +20,7 @@
   font-weight: 900;
   font-size: 32px;
   color: #333;
-  margin-right: 1300px;
+  margin-right: auto; /* Align left on larger screens */
 }
 
 .dashboard-image-container {
@@ -28,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 20px; /* Add padding for smaller screens */
 }
 
 .dashboard-image {
@@ -42,8 +44,7 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 40px;
-  margin-right: 90px;
-  margin-left: 200px;
+  gap: 20px; /* Use gap for spacing */
 }
 
 .overview-title {
@@ -113,11 +114,12 @@
 @media (max-width: 1199px) {
   .dashboard-header h2 {
     margin-right: 0;
-    text-align: center;
+    text-align: center; /* Center align text for consistency */
   }
 
   .overview-row {
     flex-direction: column;
+    gap: 20px; /* Consistent spacing */
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -192,5 +194,13 @@
 
   .overview-row {
     margin: 10px;
+  }
+
+  .overview-text {
+    text-align: center; /* Align text for better readability */
+  }
+
+  .overview-image-container {
+    min-height: 250px;
   }
 }

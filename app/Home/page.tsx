@@ -5,7 +5,7 @@ import ServicesSection from "@/components/HomeService/layout";
 import Navbar from "@/components/Navbar/layout";
 import ScrollToTop from "@/components/ScrollTop/layout";
 import Testimonials from "@/components/Testimonials/test";
-import React, { Children } from "react";
+import React from "react";
 
 
 
@@ -19,9 +19,7 @@ const Page: React.FC = () => {
              <ServicesSection/>
              <CaseStudy/>   
              <Testimonials/>
-             {/* Add valid children elements here if needed */}
              <ScrollToTop/>
-             
              <Footer/>
 
        </div>

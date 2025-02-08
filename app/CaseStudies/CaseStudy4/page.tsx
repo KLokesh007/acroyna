@@ -1,5 +1,4 @@
 import Getway from "@/components/CaseStudies/Getway/layout";
-import VTU from "@/components/CaseStudies/VtuReceipt/layout";
 import Footer from "@/components/Footer/layout";
 import Navbar from "@/components/Navbar/layout";
 import ScrollToTop from "@/components/ScrollTop/layout";
