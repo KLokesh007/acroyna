@@ -17,7 +17,7 @@ export default function WebDevelopment() {
   
       <div className="md:mt-30 flex h-90 w-full items-center justify-center lg:mr-20 lg:w-1/2">
         <LottieAnimation
-          animationPath="/lottie/appDevelopment.json" // Animation for another use
+          animationPath="/lottie/appdevelopment.json" // Animation for another use
           loop={true}
           autoplay={true}
         />
