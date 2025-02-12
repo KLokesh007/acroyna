@@ -42,7 +42,7 @@
   flex: 1;
   font-size: 1rem;
   font-weight: 700;
-  color: #555;
+  color: black;
   text-align: left;
   max-width: 800px; /* Ensures readable line length */
   padding-left: 30px; /* Gap between title and text */

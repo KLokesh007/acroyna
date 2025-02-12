@@ -10,18 +10,13 @@
   text-align: center; /* Center-align for all screen sizes */
 }
 
-.dashboard-header h1 {
+.alba-bold{
   font-size: 38px;
   font-weight: 900;
   color: #4a4adb;
 }
 
-.dashboard-header h2 {
-  font-weight: 900;
-  font-size: 32px;
-  color: #333;
-  margin-right: auto; /* Align left on larger screens */
-}
+
 
 .dashboard-image-container {
   width: 100%;

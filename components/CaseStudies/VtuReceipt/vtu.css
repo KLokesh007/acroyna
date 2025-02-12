@@ -46,7 +46,7 @@
   margin-right: auto;
   margin-left: auto;
   flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
-  max-width: 1200px; /* Constrain the maximum width */
+  max-width: 900px;/* Constrain the maximum width */
   gap: 20px; /* Add spacing between items */
 }
 

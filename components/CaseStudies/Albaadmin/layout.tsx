@@ -5,8 +5,9 @@ const AdminDashboard: React.FC = () => {
     return (
         <><div className="dashboard-container">
             <header className="dashboard-header">
-                <h1>Alba Mart Admin</h1>
-                <h2>Web App</h2>
+                <span className="alba-bold">
+                    Alba Mart Admin <br /> Web App
+                </span>
             </header>
 
             <div className="dashboard-image-container">
