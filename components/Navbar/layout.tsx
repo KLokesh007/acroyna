@@ -118,7 +118,7 @@ export default function Navbar() {
         </div>
         <a href="/">Work</a>
         <a href="/Aboutus">About Us</a>
-        <a href="/#services">Services</a>
+        <a href="/#Services" onClick={() => setIsMenuOpen(false)}>Services</a>
         <a href="/CareerSection">Careers</a>
         <a href="https://forms.gle/c18A2HmzV19E5SJB7" target="_blank" rel="noopener noreferrer">Contact Us</a>
       </div>
