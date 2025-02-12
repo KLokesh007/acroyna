@@ -1,60 +1,82 @@
 .ecommerce-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
     color: #333;
     line-height: 1.6;
 }
 
+/* Header: Align heading and subheading */
+.ecommerce-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* E-Commerce Heading */
 .ecommerce-heading {
-    font-size: clamp(2rem, 5vw, 2.5rem); /* Responsive font size */
-    font-weight: 900;
-    margin-bottom: 10px;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
     color: #000;
-    text-align: center;
+    line-height: 1.2;
+    white-space: nowrap;
+    margin-left: 60px;
 }
 
+.ecommerce-bold {
+    display: block;
+    font-weight: 900;
+}
+
+
+
+/* Subheading Positioned to the Right */
 .ecommerce-subheading {
-    font-size: clamp(1rem, 2vw, 1.25rem); /* Responsive font size */
+    max-width: 600px;
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 700;
-    margin-bottom: 30px;
     color: #555;
-    line-height: 1.8;
-    text-align: center;
+    line-height: 1.6;
+    text-align: left;
 }
 
+/* Content layout: Image on left, text on right */
 .ecommerce-content {
     display: flex;
-    flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 30px;
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
+/* Image container */
 .ecommerce-image {
     flex: 1;
     max-width: 40%;
-    border-radius: 10px;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
 }
 
 .ecommerce-details {
-    flex: 1;
+    flex: 2;
+    max-width: 55%;
+    
 }
 
+/* Offerings Section */
 .ecommerce-details h2 {
-    font-size: clamp(1.75rem, 4vw, 2rem); /* Responsive font size */
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 900;
-    margin-bottom: 15px;
     color: #000;
 }
 
 .ecommerce-details ul {
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
-    color: #333;
+    margin-left: 20px;
 }
 
 .ecommerce-details li {
@@ -62,110 +84,108 @@
     line-height: 1.6;
 }
 
+/* Footer Section */
 .ecommerce-footer {
-    margin-top: 40px;
+    margin-left: 60px;
 }
 
 .ecommerce-footer h2 {
-    font-size: clamp(1.75rem, 4vw, 2rem); /* Responsive font size */
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 900;
-    margin-bottom: 10px;
     color: #000;
 }
 
 .ecommerce-footer ul {
     list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
+    margin-left: 20px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     font-weight: 600;
-    color: #333;
 }
 
 .ecommerce-footer p {
     margin-top: 15px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 500;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
     color: #555;
     line-height: 1.6;
 }
 
 .ecommerce-footer i {
+    font-size: clamp(0.9rem, 1.5vw, 1.125rem);
     font-weight: 600;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
     color: #888;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
+    .ecommerce-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ecommerce-subheading {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
     .ecommerce-content {
-        flex-direction: column; /* Stack content on smaller screens */
-        gap: 20px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .ecommerce-image {
         max-width: 100%;
-        margin-bottom: 20px;
     }
 
     .ecommerce-details {
-        flex: 1;
-        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ecommerce-container {
+        padding: 20px;
     }
 
     .ecommerce-heading {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .ecommerce-subheading {
         font-size: 16px;
     }
-}
 
-@media (max-width: 768px) {
-    .ecommerce-heading {
-        font-size: 32px;
-    }
-
-    .ecommerce-subheading {
-        font-size: 15px;
-    }
-
-    .ecommerce-details h2 {
+    .ecommerce-details h2,
+    .ecommerce-footer h2 {
         font-size: 22px;
     }
 
-    .ecommerce-details ul {
+    .ecommerce-details ul,
+    .ecommerce-footer ul {
         font-size: 16px;
     }
 }
 
 @media (max-width: 480px) {
     .ecommerce-heading {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .ecommerce-subheading {
         font-size: 14px;
     }
 
-    .ecommerce-details h2 {
-        font-size: 20px;
-    }
-
-    .ecommerce-details ul {
-        font-size: 14px;
-    }
-
+    .ecommerce-details h2,
     .ecommerce-footer h2 {
         font-size: 20px;
     }
 
+    .ecommerce-details ul,
     .ecommerce-footer ul {
         font-size: 14px;
     }
 
     .ecommerce-footer p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }

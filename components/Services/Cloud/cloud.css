@@ -1,60 +1,81 @@
 .cloud-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
   color: #333;
   line-height: 1.6;
 }
 
+/* Header: Align heading and subheading */
+.cloud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Cloud Solutions Heading */
 .cloud-heading {
-  font-size: clamp(2rem, 5vw, 2.5rem); /* Scales dynamically for different screens */
-  font-weight: 900;
-  margin-bottom: 10px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: bold;
   color: #000;
-  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  margin-left: 60px;
 }
 
+.cloud-bold {
+  display: block;
+  font-weight: 900;
+}
+
+
+
+/* Subheading Positioned to the Right */
 .cloud-subheading {
-  font-size: clamp(1rem, 2vw, 1.25rem); /* Dynamic scaling for readability */
+  max-width: 600px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 700;
-  margin-bottom: 30px;
   color: #555;
-  line-height: 1.8;
-  text-align: center;
+  line-height: 1.6;
+  text-align: left;
 }
 
+/* Content layout: Image on left, text on right */
 .cloud-content {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
-  align-items: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 30px;
-  margin-bottom: 80px;
+  margin-top: 40px;
 }
 
+/* Image container */
 .cloud-image {
   flex: 1;
-  max-width: 30%;
-  border-radius: 10px;
-  object-fit: cover;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
 }
 
 .cloud-details {
-  flex: 1;
+  flex: 2;
+  max-width: 55%;
 }
 
+/* Offerings Section */
 .cloud-details h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 900;
-  margin-bottom: 20px;
   color: #000;
 }
 
 .cloud-details ul {
   font-size: clamp(1rem, 2vw, 1.125rem);
   list-style-type: disc;
-  margin: 10px 0 0 20px;
-  padding: 0;
-  color: #333;
+  margin-left: 20px;
 }
 
 .cloud-details li {
@@ -62,24 +83,23 @@
   line-height: 1.6;
 }
 
+/* Footer Section */
 .cloud-footer {
   margin-top: 40px;
+  margin-left: 60px;
 }
 
 .cloud-footer h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 900;
-  margin-bottom: 10px;
   color: #000;
 }
 
 .cloud-footer ul {
-  font-size: clamp(1rem, 2vw, 1.125rem);
   list-style-type: disc;
-  margin: 10px 0 0 20px;
-  padding: 0;
+  margin-left: 20px;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 600;
-  color: #333;
 }
 
 .cloud-footer p {
@@ -96,49 +116,76 @@
   color: #888;
 }
 
-/* Responsive Design */
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
-  .cloud-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  .cloud-header {
+      flex-direction: column;
+      align-items: flex-start;
   }
 
-  .cloud-image,
+  .cloud-subheading {
+      max-width: 100%;
+      margin-top: 10px;
+  }
+
+  .cloud-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .cloud-image {
+      max-width: 100%;
+  }
+
   .cloud-details {
-    max-width: 100%;
+      max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   .cloud-container {
-    padding: 15px;
+      padding: 20px;
+  }
+
+  .cloud-heading {
+      font-size: 28px;
   }
 
   .cloud-subheading {
-    margin-bottom: 20px;
+      font-size: 16px;
   }
 
+  .cloud-details h2,
   .cloud-footer h2 {
-    margin-bottom: 20px;
+      font-size: 22px;
+  }
+
+  .cloud-details ul,
+  .cloud-footer ul {
+      font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .cloud-heading {
-    font-size: 1.75rem;
+      font-size: 24px;
   }
 
   .cloud-subheading {
-    font-size: 1rem;
+      font-size: 14px;
+  }
+
+  .cloud-details h2,
+  .cloud-footer h2 {
+      font-size: 20px;
   }
 
   .cloud-details ul,
   .cloud-footer ul {
-    font-size: 0.95rem;
+      font-size: 14px;
   }
 
   .cloud-footer p {
-    font-size: 1rem;
+      font-size: 14px;
   }
 }

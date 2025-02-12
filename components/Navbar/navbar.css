@@ -26,8 +26,7 @@
   display: flex;
   gap: 2rem;
   align-items: center;
-  margin: 0 auto;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  margin-left: 30rem;
 }
 
 .nav-link {
@@ -46,7 +45,6 @@
 /* Dropdown menu styles */
 .ndropdown {
   position: relative;
-  display: inline-block;
 }
 
 .nav-link .ndropdown-arrow {
@@ -60,6 +58,7 @@
   transform: rotate(180deg);
 }
 
+/* Dropdown Menu - Delayed Close */
 .ndropdown-menu {
   display: none;
   position: absolute;
@@ -74,14 +73,19 @@
   padding: 10px 0;
   z-index: 1000;
   margin-top: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-.ndropdown:hover .ndropdown-menu {
+.ndropdown-menu.active {
   display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .ndropdown-item {
-  font-family: "Kodchasan", serif;
+  
   text-decoration: none;
   display: block;
   padding: 8px 16px;
@@ -101,7 +105,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-left: auto;
+  
 }
 
 .work-button {
@@ -112,7 +116,6 @@
   border-radius: 25px;
   font-size: 0.875rem;
   cursor: pointer;
-  white-space: nowrap;
   transition: background-color 0.2s ease;
 }
 
@@ -120,6 +123,7 @@
   background-color: #2a2a4a;
 }
 
+/* Mobile Menu Button */
 .menu-button {
   display: none;
   width: 50px;
@@ -172,7 +176,7 @@
   transform: rotate(-45deg);
 }
 
-/* Dropdown Menu Styles */
+/* Dropdown Menu for Mobile */
 .dropdown-menu {
   position: fixed;
   top: 0;
@@ -206,18 +210,18 @@
   color: white;
 }
 
+/* Close Button */
 .close-button {
   background: none;
   border: none;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
   cursor: pointer;
   font-weight: bold;
-  transition: color 0.3s ease;
-  display: block;
   position: absolute;
-  right: 2rem;
-  top: 2rem;
+  right: 1.5rem;
+  top: 1rem;
+  transition: color 0.3s ease;
 }
 
 .close-button:hover {
@@ -236,6 +240,7 @@
   color: #ffd012;
 }
 
+/* Fade-In Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -295,9 +300,13 @@
   .logo-image {
     width: 50px;
   }
+
   .close-button {
-    display: block;
+    font-size: 2.5rem;
+    right: 1rem;
+    top: 0.8rem;
   }
+
   .dropdown-menu a {
     font-size: 1.5rem;
   }
@@ -323,4 +332,3 @@
     width: 40px;
   }
 }
-

@@ -3,7 +3,9 @@
   background-color: #0a0a29;
   color: white;
   padding: 64px 32px;
-  text-align: center; /* Center the text by default for smaller screens */
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-container {
@@ -13,11 +15,11 @@
 
 .footer-top {
   margin-bottom: 48px;
-  text-align: left; /* Align content to the left */
+  margin-right: 50rem;
 }
 
 .footer-heading {
-  font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: bold;
   margin-bottom: 24px;
 }
@@ -31,34 +33,37 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-right: 90px;
 }
 
 .footer-button:hover {
-  background-color: #f0f0f0; /* Button hover effect */
+  background-color: #9CA3AF;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   gap: 48px;
-  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
-  text-align: left; /* Align text to the left on larger screens */
+  flex-wrap: wrap;
+  text-align: left;
 }
 
 .footer-contact {
   flex: 1;
-  min-width: 250px; /* Ensures the contact section has a minimum width */
+  min-width: 250px;
 }
 
 .footer-contact p {
   margin-bottom: 16px;
   font-size: 14px;
+  margin-left: 90px;
 }
 
 .footer-links {
   display: flex;
   gap: 64px;
-  flex-wrap: wrap; /* Wrap links on smaller screens */
+  flex-wrap: wrap;
+  margin-right: 120px;
 }
 
 .footer-column {
@@ -74,37 +79,83 @@
 }
 
 .footer-column a:hover {
-  color: #ffcc00; /* Hover color change for links */
+  color: #ffcc00;
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .footer {
-      padding: 40px 20px; /* Less padding for smaller screens */
-  }
-
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
   .footer-top {
-      text-align: left; /* Align heading and button to the left */
-  }
-
-  .footer-heading {
-      font-size: 28px; /* Adjust heading size for mobile */
-  }
-
-  .footer-content {
-      flex-direction: column; /* Stack content vertically on smaller screens */
-      gap: 30px;
+    margin-right: 45rem;
   }
 
   .footer-links {
-      gap: 24px; /* Adjust gap between footer columns on smaller screens */
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-top {
+    margin-right: 15rem;
   }
 
-  .footer-column a {
-      font-size: 16px; /* Increase font size for readability on mobile */
+  .footer-button {
+    margin-right: 45px;
   }
 
   .footer-contact p {
-      font-size: 16px; /* Increase font size for better readability */
+    margin-left: 45px;
+  }
+
+  .footer-links {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-top {
+    margin-right: 5rem;
+  }
+
+  .footer-heading {
+    font-size: 28px;
+  }
+
+  .footer-button {
+    margin-right: 20px;
+  }
+
+  .footer-content {
+    gap: 32px;
+  }
+
+  .footer-contact p {
+    margin-left: 20px;
+  }
+
+  .footer-links {
+    margin-right: 20px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top {
+    margin-right: 0;
+  }
+
+  .footer-button {
+    margin-right: 0;
+  }
+
+  .footer-contact p {
+    margin-left: 0;
+  }
+
+  .footer-links {
+    margin-right: 0;
   }
 }

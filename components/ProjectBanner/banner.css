@@ -1,82 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-.project-banner {
+.project-container {
   display: flex;
   align-items: center;
-  padding: 80px 90px;
-  background-color: #f9f9f9;
-  flex-wrap: wrap; /* Ensures content stacks on smaller screens */
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  padding: 9px;
+  background-color: #f8f8f8;
 }
 
-.content {
-  max-width: 50%;
-  flex: 1 1 100%; /* Adjusts content width dynamically */
-  text-align: center; /* Centers text on smaller screens */
+.project-text {
+  text-align: left;
+  max-width: 40%;
+  margin-left: 220px;
 }
 
-.title {
-  font-family: 'Mulish', serif;
-  font-size: 2.5rem;
+.project-text h2 {
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #333;
 }
 
-.cta-button {
-  background-color: #000;
-  color: #fff;
+.project-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 25px;
+  border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
-  background-color: #444;
+.project-button:hover {
+  background-color: #9CA3AF;
 }
 
-.image-section {
+.project-image {
+  flex: 1;
   max-width: 50%;
-  flex: 1 1 100%; /* Adjusts image section width dynamically */
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-.banner-image {
+.project-image img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-  .project-banner {
-    padding: 40px 20px;
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+  .project-text {
+    max-width: 50%;
+    margin-left: 120px; /* Reduce left margin */
   }
+}
 
-  .title {
-    font-size: 2rem;
-    margin-left: 0; /* Center title on smaller screens */
+@media screen and (max-width: 768px) {
+  .project-container {
+    flex-direction: column; /* Stack elements on smaller screens */
+    align-items: center;
     text-align: center;
   }
 
-  .cta-button {
-    margin-left: 0; /* Center button on smaller screens */
+  .project-text {
+    max-width: 90%;
+    margin-left: 0; /* Remove left margin */
   }
 
-  .content, .image-section {
-    max-width: 100%; /* Ensure full width on smaller screens */
+  .project-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .project-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .project-image {
+    max-width: 80%;
+    justify-content: center;
   }
 }
 
-@media (max-width: 480px) {
-  .title {
+@media screen and (max-width: 480px) {
+  .project-text h2 {
     font-size: 1.5rem;
   }
 
-  .cta-button {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+  .project-button {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .project-image {
+    max-width: 100%;
   }
 }

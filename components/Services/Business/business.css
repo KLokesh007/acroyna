@@ -1,58 +1,82 @@
 .business-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
     color: #333;
     line-height: 1.6;
 }
 
+/* Header: Align heading and subheading */
+.business-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Business Process Automation Heading */
 .business-heading {
-    font-size: clamp(2rem, 5vw, 2.5rem); /* Dynamic font scaling */
-    font-weight: 900;
-    margin-bottom: 10px;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
     color: #000;
+    line-height: 1.2;
+    white-space: nowrap;
+    margin-left: 60px;
 }
 
-.business-subheading {
-    font-size: clamp(1rem, 2vw, 1.25rem); /* Dynamic font scaling */
+.business-bold {
+    display: block;
+    font-weight: 900;
+}
+
+.business-title {
     font-weight: 700;
-    margin-bottom: 30px;
-    color: #555;
-    line-height: 1.8;
 }
 
+/* Subheading Positioned to the Right */
+.business-subheading {
+    max-width: 600px;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 700;
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Content layout: Image on left, text on right */
 .business-content {
     display: flex;
-    flex-wrap: wrap; /* Flex wrap for smaller screens */
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 30px;
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
+/* Image container */
 .business-image {
     flex: 1;
     max-width: 50%;
-    border-radius: 10px;
-    object-fit: cover;
+   
+    align-items: center;
+    margin-left: 60px;
 }
 
 .business-details {
-    flex: 1;
+    flex: 2;
+    max-width: 55%;
 }
 
+/* Offerings Section */
 .business-details h2 {
-    font-size: clamp(1.75rem, 4vw, 2rem); /* Scaling font size dynamically */
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 900;
-    margin-bottom: 15px;
     color: #000;
 }
 
 .business-details ul {
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Dynamic font scaling */
+    font-size: clamp(1rem, 2vw, 1.125rem);
     list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
-    color: #333;
+    margin-left: 20px;
 }
 
 .business-details li {
@@ -60,109 +84,109 @@
     line-height: 1.6;
 }
 
+/* Footer Section */
 .business-footer {
     margin-top: 40px;
+    margin-left: 60px;
 }
 
 .business-footer h2 {
-    font-size: clamp(1.75rem, 4vw, 2rem); /* Scaling font size dynamically */
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 900;
-    margin-bottom: 10px;
     color: #000;
 }
 
 .business-footer ul {
     list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Dynamic font scaling */
+    margin-left: 20px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     font-weight: 600;
-    color: #333;
 }
 
 .business-footer p {
     margin-top: 15px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 500;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Dynamic font scaling */
     color: #555;
     line-height: 1.6;
 }
 
 .business-footer i {
+    font-size: clamp(0.9rem, 1.5vw, 1.125rem);
     font-weight: 600;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Dynamic font scaling */
     color: #888;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
+    .business-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .business-subheading {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
     .business-content {
-        flex-direction: column; /* Stack content for small screens */
-        gap: 20px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .business-image {
         max-width: 100%;
-        margin-bottom: 20px;
     }
 
     .business-details {
-        flex: 1;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .business-container {
+        padding: 20px;
     }
 
     .business-heading {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .business-subheading {
         font-size: 16px;
     }
-}
 
-@media (max-width: 768px) {
-    .business-heading {
-        font-size: 32px;
-    }
-
-    .business-subheading {
-        font-size: 15px;
-    }
-
-    .business-details h2 {
+    .business-details h2,
+    .business-footer h2 {
         font-size: 22px;
     }
 
-    .business-details ul {
+    .business-details ul,
+    .business-footer ul {
         font-size: 16px;
     }
 }
 
 @media (max-width: 480px) {
     .business-heading {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .business-subheading {
         font-size: 14px;
     }
 
-    .business-details h2 {
-        font-size: 20px;
-    }
-
-    .business-details ul {
-        font-size: 14px;
-    }
-
+    .business-details h2,
     .business-footer h2 {
         font-size: 20px;
     }
 
+    .business-details ul,
     .business-footer ul {
         font-size: 14px;
     }
 
     .business-footer p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }

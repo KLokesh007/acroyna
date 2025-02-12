@@ -1,142 +1,191 @@
 .softwaredevelopment-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #333;
-    line-height: 1.6;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Updated Header Layout */
+.softwaredevelopment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.softwaredevelopment-heading {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 900;
+  color: #000;
+  text-align: left;
+  flex: 1;
+  margin-left:60px;
+}
+
+.softwaredevelopment-subheading {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 700;
+  color: #555;
+  line-height: 1.8;
+  text-align: left;
+  flex: 2;
+}
+
+/* Content Layout */
+.softwaredevelopment-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Details Section */
+.softwaredevelopment-details {
+  flex: 1;
+  margin-left:60px;
+}
+
+.softwaredevelopment-details h2 {
+  font-size: clamp(1.75rem, 4vw, 2rem);
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.softwaredevelopment-details ul {
+  font-size: 18px;
+  list-style-type: disc;
+  margin: 10px 0 0 20px;
+  padding: 0;
+  color: #333;
+}
+
+.softwaredevelopment-details li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Animation Section */
+.softwaredevelopment-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.softwaredevelopment-animation > div {
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+}
+
+/* Hidden animation in desktop, shown in responsive */
+.softwaredevelopment-animation-responsive {
+  display: none;
+}
+
+/* Footer Section */
+.softwaredevelopment-footer {
   
-  .softwaredevelopment-heading {
-    font-size: clamp(2rem, 5vw, 2.5rem); /* Scales dynamically for different screen sizes */
-    font-weight: 900;
-    margin-bottom: 10px;
-    color: #000;
-    text-align: center;
-  }
-  
-  .softwaredevelopment-subheading {
-    font-size: clamp(1rem, 2vw, 1.25rem); /* Dynamic scaling */
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #555;
-    line-height: 1.8;
-    text-align: center;
-  }
-  
-  .softwaredevelopment-content {
-    display: flex;
-    flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
-    align-items: flex-start;
-    gap: 30px;
-  }
-  
-  .softwaredevelopment-image {
-    flex: 1;
-    max-width: 40%;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .softwaredevelopment-details {
-    flex: 1;
-    margin-top: 40px;
-  }
-  
-  .softwaredevelopment-details h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 900;
-    margin-bottom: 15px;
-    color: #000;
-  }
-  
-  .softwaredevelopment-details ul {
-    font-size: clamp(1rem, 2vw, 1.125rem);
-    list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
-    color: #333;
-  }
-  
-  .softwaredevelopment-details li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-  }
-  
-  .softwaredevelopment-footer h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 900;
-    margin-top: -60px;
-    color: #000;
-  }
-  
-  .softwaredevelopment-footer ul {
-    font-size: clamp(1rem, 2vw, 1.125rem);
-    font-weight: 600;
-    line-height: 1.8;
-    list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
-    color: #333;
-  }
-  
-  .softwaredevelopment-footer p {
-    margin-top: 15px;
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    font-weight: 500;
-    color: #555;
-    line-height: 1.7;
-  }
-  
-  .softwaredevelopment-footer i {
-    font-size: clamp(0.9rem, 1.5vw, 1.125rem);
-    font-weight: 600;
-    color: #888;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .softwaredevelopment-content {
+  margin-left:60px;
+}
+
+.softwaredevelopment-footer h2 {
+  font-size: clamp(1.75rem, 4vw, 2rem);
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.softwaredevelopment-footer ul {
+  list-style-type: disc;
+  margin: 10px 0 0 20px;
+  padding: 0;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 600;
+  color: #333;
+}
+
+.softwaredevelopment-footer p {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .softwaredevelopment-header {
       flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-  
-    .softwaredevelopment-image,
-    .softwaredevelopment-details {
+      text-align: center;
+      gap: 2rem;
+  }
+
+  .softwaredevelopment-heading {
+      font-size: 3rem;
+      text-align: center;
+  }
+
+  .softwaredevelopment-subheading {
+      text-align: center;
       max-width: 100%;
-    }
   }
-  
-  @media (max-width: 768px) {
-    .softwaredevelopment-container {
-      padding: 15px;
-    }
-  
-    .softwaredevelopment-subheading {
-      margin-bottom: 20px;
-    }
-  
-    .softwaredevelopment-footer h2 {
-      margin-top: -30px;
-    }
+
+  .softwaredevelopment-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
   }
-  
-  @media (max-width: 480px) {
-    .softwaredevelopment-heading {
+
+  .softwaredevelopment-animation {
+      display: none;
+  }
+
+  .softwaredevelopment-animation-responsive {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+  }
+
+  .softwaredevelopment-animation-responsive > div {
+      width: 100%;
+      max-width: 500px;
+      height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .softwaredevelopment-container {
+      padding: 2rem 1rem;
+  }
+
+  .softwaredevelopment-heading {
+      font-size: 2.5rem;
+  }
+
+  .softwaredevelopment-footer h2 {
       font-size: 1.75rem;
-    }
-  
-    .softwaredevelopment-subheading {
-      font-size: 1rem;
-    }
-  
-    .softwaredevelopment-details ul,
-    .softwaredevelopment-footer ul {
-      font-size: 0.95rem;
-    }
-  
-    .softwaredevelopment-footer p {
-      font-size: 1rem;
-    }
   }
-  
+
+  .softwaredevelopment-footer ul,
+  .softwaredevelopment-subheading,
+  .softwaredevelopment-footer p {
+      font-size: 1rem;
+  }
+
+  .softwaredevelopment-animation-responsive > div {
+      height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .softwaredevelopment-heading {
+      font-size: 2rem;
+  }
+
+  .softwaredevelopment-animation-responsive > div {
+      height: 300px;
+  }
+}

@@ -26,8 +26,8 @@ export default function HeroSection() {
           {/* Core sparkles component */}
           <SparklesCore
             background="white"
-            minSize={0.7}
-            maxSize={3}
+            minSize={0.5}
+            maxSize={2}
             particleDensity={1600}
             className="sparkles"
             particleColor="#14142B"

@@ -1,146 +1,193 @@
 .cybersecurity-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #333;
-    line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header: Align heading and subheading */
+.cybersecurity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Cybersecurity Heading */
+.cybersecurity-heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: bold;
+  color: #000;
+  line-height: 1.2;
+  white-space: nowrap;
+  margin-left: 60px;
+}
+
+.cybersecurity-bold {
+  display: block;
+  font-weight: 900;
+}
+
+.cybersecurity-title {
+  font-weight: 700;
+}
+
+/* Subheading Positioned to the Right */
+.cybersecurity-subheading {
+  max-width: 600px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 700;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Content layout: Image on left, text on right */
+.cybersecurity-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Image container */
+.cybersecurity-image {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.cybersecurity-details {
+  flex: 2;
+  max-width: 55%;
+}
+
+/* Offerings Section */
+.cybersecurity-details h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 900;
+  color: #000;
+}
+
+.cybersecurity-details ul {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.cybersecurity-details li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Footer Section */
+.cybersecurity-footer {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.cybersecurity-footer h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 900;
+  color: #000;
+}
+
+.cybersecurity-footer ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-weight: 600;
+}
+
+.cybersecurity-footer p {
+  margin-top: 15px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 500;
+  color: #555;
+  line-height: 1.6;
+}
+
+.cybersecurity-footer i {
+  font-size: clamp(0.9rem, 1.5vw, 1.125rem);
+  font-weight: 600;
+  color: #888;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .cybersecurity-header {
+      flex-direction: column;
+      align-items: flex-start;
   }
-  
-  .cybersecurity-heading {
-    font-size: clamp(2rem, 5vw, 2.5rem); /* Dynamic scaling for all screen sizes */
-    font-weight: 900;
-    margin-bottom: 10px;
-    color: #000;
-    text-align: center; /* Centered heading for better focus */
-  }
-  
+
   .cybersecurity-subheading {
-    font-size: clamp(1rem, 2vw, 1.25rem); /* Scales for small screens */
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #555;
-    line-height: 1.8;
-    text-align: center;
+      max-width: 100%;
+      margin-top: 10px;
   }
-  
+
   .cybersecurity-content {
-    display: flex;
-    flex-wrap: wrap; /* Flex-wrap for responsive layouts */
-    align-items: flex-start;
-    gap: 30px;
-    margin-bottom: 40px;
-  }
-  
-  .cybersecurity-image {
-    flex: 1;
-    max-width: 30%;
-    background: transparent;
-    border-radius: 10px;
-    object-fit: cover; /* Ensures images scale well */
-  }
-  
-  .cybersecurity-details {
-    flex: 1;
-  }
-  
-  .cybersecurity-details h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem); /* Responsive heading size */
-    font-weight: 900;
-    margin-bottom: 15px;
-    color: #000;
-  }
-  
-  .cybersecurity-details ul {
-    font-size: clamp(1rem, 2vw, 1.125rem); /* Dynamic font scaling */
-    list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
-    color: #333;
-  }
-  
-  .cybersecurity-details li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-  }
-  
-  .cybersecurity-footer {
-    margin-top: 40px;
-  }
-  
-  .cybersecurity-footer h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 900;
-    margin-bottom: 10px;
-    color: #000;
-  }
-  
-  .cybersecurity-footer ul {
-    list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
-    font-size: clamp(1rem, 2vw, 1.125rem);
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .cybersecurity-footer p {
-    margin-top: 15px;
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    font-weight: 500;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  .cybersecurity-footer i {
-    font-size: clamp(0.9rem, 1.5vw, 1.125rem);
-    font-weight: 600;
-    color: #888;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .cybersecurity-content {
       flex-direction: column;
       align-items: center;
-      gap: 20px;
-    }
-  
-    .cybersecurity-image,
-    .cybersecurity-details {
+  }
+
+  .cybersecurity-image {
       max-width: 100%;
-    }
   }
-  
-  @media (max-width: 768px) {
-    .cybersecurity-container {
-      padding: 15px;
-    }
-  
-    .cybersecurity-subheading {
-      margin-bottom: 20px;
-    }
-  
-    .cybersecurity-footer h2 {
-      margin-bottom: 20px;
-    }
+
+  .cybersecurity-details {
+      max-width: 100%;
   }
-  
-  @media (max-width: 480px) {
-    .cybersecurity-heading {
-      font-size: 1.75rem;
-    }
-  
-    .cybersecurity-subheading {
-      font-size: 1rem;
-    }
-  
-    .cybersecurity-details ul,
-    .cybersecurity-footer ul {
-      font-size: 0.95rem;
-    }
-  
-    .cybersecurity-footer p {
-      font-size: 1rem;
-    }
+}
+
+@media (max-width: 768px) {
+  .cybersecurity-container {
+      padding: 20px;
   }
-  
+
+  .cybersecurity-heading {
+      font-size: 28px;
+  }
+
+  .cybersecurity-subheading {
+      font-size: 16px;
+  }
+
+  .cybersecurity-details h2,
+  .cybersecurity-footer h2 {
+      font-size: 22px;
+  }
+
+  .cybersecurity-details ul,
+  .cybersecurity-footer ul {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cybersecurity-heading {
+      font-size: 24px;
+  }
+
+  .cybersecurity-subheading {
+      font-size: 14px;
+  }
+
+  .cybersecurity-details h2,
+  .cybersecurity-footer h2 {
+      font-size: 20px;
+  }
+
+  .cybersecurity-details ul,
+  .cybersecurity-footer ul {
+      font-size: 14px;
+  }
+
+  .cybersecurity-footer p {
+      font-size: 14px;
+  }
+}

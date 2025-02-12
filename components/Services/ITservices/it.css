@@ -6,43 +6,50 @@
     line-height: 1.6;
 }
 
+/* Updated Header Layout */
+.itsupport-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    
+}
+
 .itsupport-heading {
-    font-size: clamp(2rem, 5vw, 2.5rem); /* Responsive font size */
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 900;
-    margin-bottom: 10px;
     color: #000;
-    text-align: center;
+    text-align: left;
+    flex: 1;
+    margin-left: 60px;
 }
 
 .itsupport-subheading {
-    font-size: clamp(1rem, 2vw, 1.25rem); /* Responsive font size */
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 700;
-    margin-bottom: 30px;
     color: #555;
     line-height: 1.8;
-    text-align: center;
+    text-align: left;
+    flex: 2;
 }
 
+/* Content Layout */
 .itsupport-content {
-    display: flex;
-    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
-    align-items: flex-start;
-    gap: 30px;
-    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
 }
 
-.itsupport-image {
-    flex: 1;
-    max-width: 40%;
-    border-radius: 10px;
-}
-
+/* Details Section */
 .itsupport-details {
     flex: 1;
+    margin-left: 60px;
 }
 
 .itsupport-details h2 {
-    font-size: clamp(1.75rem, 4vw, 2rem); /* Responsive font size */
+    font-size: clamp(1.75rem, 4vw, 2rem);
     font-weight: 900;
     margin-bottom: 15px;
     color: #000;
@@ -61,12 +68,32 @@
     line-height: 1.6;
 }
 
+/* Animation Section */
+.itsupport-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.itsupport-animation > div {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+}
+
+/* Hidden animation in desktop, shown in responsive */
+.itsupport-animation-responsive {
+    display: none;
+}
+
+/* Footer Section */
 .itsupport-footer {
-    margin-top: -20px;
+    margin-left: 60px;
 }
 
 .itsupport-footer h2 {
-    font-size: clamp(1.75rem, 4vw, 2rem); /* Responsive font size */
+    font-size: clamp(1.75rem, 4vw, 2rem);
     font-weight: 900;
     margin-bottom: 20px;
     color: #000;
@@ -76,7 +103,7 @@
     list-style-type: disc;
     margin: 10px 0 0 20px;
     padding: 0;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     font-weight: 600;
     color: #333;
 }
@@ -84,81 +111,81 @@
 .itsupport-footer p {
     margin-top: 15px;
     font-weight: 500;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     color: #555;
     line-height: 1.6;
 }
 
-.itsupport-footer i {
-    font-weight: 600;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
-    color: #888;
-}
-
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-    .itsupport-content {
-        flex-direction: column; /* Stack content on smaller screens */
-        gap: 20px;
-    }
-
-    .itsupport-details {
-        margin-left: 0;
+    .itsupport-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
     }
 
     .itsupport-heading {
-        font-size: 36px;
+        font-size: 3rem;
+        text-align: center;
     }
 
     .itsupport-subheading {
-        font-size: 16px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .itsupport-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .itsupport-animation {
+        display: none;
+    }
+
+    .itsupport-animation-responsive {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .itsupport-animation-responsive > div {
+        width: 100%;
+        max-width: 500px;
+        height: 500px;
     }
 }
 
 @media (max-width: 768px) {
+    .itsupport-container {
+        padding: 2rem 1rem;
+    }
+
     .itsupport-heading {
-        font-size: 32px;
+        font-size: 2.5rem;
     }
 
-    .itsupport-subheading {
-        font-size: 15px;
+    .itsupport-footer h2 {
+        font-size: 1.75rem;
     }
 
-    .itsupport-details h2 {
-        font-size: 22px;
+    .itsupport-footer ul,
+    .itsupport-subheading,
+    .itsupport-footer p {
+        font-size: 1rem;
     }
 
-    .itsupport-details ul {
-        font-size: 16px;
+    .itsupport-animation-responsive > div {
+        height: 400px;
     }
 }
 
 @media (max-width: 480px) {
     .itsupport-heading {
-        font-size: 28px;
+        font-size: 2rem;
     }
 
-    .itsupport-subheading {
-        font-size: 14px;
-    }
-
-    .itsupport-details h2 {
-        font-size: 20px;
-    }
-
-    .itsupport-details ul {
-        font-size: 14px;
-    }
-
-    .itsupport-footer h2 {
-        font-size: 20px;
-    }
-
-    .itsupport-footer ul {
-        font-size: 14px;
-    }
-
-    .itsupport-footer p {
-        font-size: 16px;
+    .itsupport-animation-responsive > div {
+        height: 300px;
     }
 }

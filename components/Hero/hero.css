@@ -29,15 +29,15 @@
 }
 
 .hero-title {
-  font-size: clamp(1.5rem, 4vw, 3rem); /* Responsive font size */
+  font-size: clamp(1.5rem, 4vw, 3rem);
   font-weight: 900;
   color: black;
-  line-height: 1.2; /* Adjusts spacing between lines */
-  width: 1000px; /* Limits the width to force wrapping */
-  margin: 0 auto; /* Centers the text */
-  text-align: center; /* Ensures alignment is visually appealing */
+  line-height: 1.2;
+  width: auto; /* Allows full-width title without restriction */
+  margin: 0 auto;
+  text-align: center;
+  white-space: normal;
 }
-
 
 /* Sparkles section */
 .sparkles-container {
@@ -125,7 +125,7 @@
   border-radius: 0.5rem;
   font-weight: 500;
   transition: all 0.2s ease;
-  font-size: clamp(0.8rem, 2.5vw, 1rem); /* Responsive font size */
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 
 .btn-primary {
@@ -179,14 +179,15 @@
 .trusted-logos {
   display: flex;
   justify-content: center;
-  gap: 1.5rem; /* Adds spacing between logos */
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .trusted-logo {
   width: clamp(40px, 10vw, 80px);
   height: auto;
+  border-radius: 15px;
 }
-
 
 /* Responsive styles */
 @media (max-width: 1024px) {
@@ -267,6 +268,7 @@
 @media (max-width: 360px) {
   .hero-title {
     font-size: 1.5rem;
+    width: auto; /* Ensures no restriction */
   }
 
   .btn {

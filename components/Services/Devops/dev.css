@@ -1,53 +1,85 @@
 .devops-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
     color: #333;
     line-height: 1.6;
 }
 
+/* Header: Align heading and subheading */
+.devops-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* DevOps Heading */
 .devops-heading {
-    font-size: clamp(2rem, 5vw, 2.5rem); /* Responsive font size */
-    font-weight: 900;
-    margin-bottom: 10px;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
     color: #000;
-    text-align: center;
+    line-height: 1.2;
+    white-space: nowrap;
+    margin-left: 60px;
 }
 
-.devops-subheading {
-    font-size: clamp(1rem, 2vw, 1.25rem); /* Responsive font size */
+.devops-bold {
+    display: block;
+    font-weight: 900;
+}
+
+.devops-title {
     font-weight: 700;
-    margin-bottom: 30px;
-    color: #555;
-    line-height: 1.8;
-    text-align: center;
 }
 
+/* Subheading Positioned to the Right */
+.devops-subheading {
+    max-width: 600px;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 700;
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 60px;
+}
+
+/* Content layout: Image on left, text on right */
 .devops-content {
     display: flex;
-    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 30px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/* Image container */
+.devops-image {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
 }
 
 .devops-details {
-    flex: 1;
+    flex: 2;
+    max-width: 55%;
+    margin-left: 60px;
 }
 
+/* Offerings Section */
 .devops-details h2 {
-    font-size: clamp(1.75rem, 4vw, 2rem); /* Responsive font size */
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 900;
-    margin-bottom: 15px;
     color: #000;
 }
 
 .devops-details ul {
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
-    color: #333;
+    margin-left: 20px;
 }
 
 .devops-details li {
@@ -55,104 +87,109 @@
     line-height: 1.6;
 }
 
+/* Footer Section */
 .devops-footer {
-    margin-top: -20px;
+    margin-top: 40px;
+    margin-left: 60px;
 }
 
 .devops-footer h2 {
-    font-size: clamp(1.75rem, 4vw, 2rem); /* Responsive font size */
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 900;
-    margin-bottom: 20px;
     color: #000;
 }
 
 .devops-footer ul {
     list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
+    margin-left: 20px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     font-weight: 600;
-    color: #333;
 }
 
 .devops-footer p {
     margin-top: 15px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 500;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
     color: #555;
     line-height: 1.6;
 }
 
 .devops-footer i {
+    font-size: clamp(0.9rem, 1.5vw, 1.125rem);
     font-weight: 600;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
     color: #888;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
+    .devops-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .devops-subheading {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
     .devops-content {
-        flex-direction: column; /* Stack content on smaller screens */
-        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .devops-image {
+        max-width: 100%;
     }
 
     .devops-details {
-        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .devops-container {
+        padding: 20px;
     }
 
     .devops-heading {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .devops-subheading {
         font-size: 16px;
     }
-}
 
-@media (max-width: 768px) {
-    .devops-heading {
-        font-size: 32px;
-    }
-
-    .devops-subheading {
-        font-size: 15px;
-    }
-
-    .devops-details h2 {
+    .devops-details h2,
+    .devops-footer h2 {
         font-size: 22px;
     }
 
-    .devops-details ul {
+    .devops-details ul,
+    .devops-footer ul {
         font-size: 16px;
     }
 }
 
 @media (max-width: 480px) {
     .devops-heading {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .devops-subheading {
         font-size: 14px;
     }
 
-    .devops-details h2 {
-        font-size: 20px;
-    }
-
-    .devops-details ul {
-        font-size: 14px;
-    }
-
+    .devops-details h2,
     .devops-footer h2 {
         font-size: 20px;
     }
 
+    .devops-details ul,
     .devops-footer ul {
         font-size: 14px;
     }
 
     .devops-footer p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }

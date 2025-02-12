@@ -1,26 +1,18 @@
-'use client'
-import React from 'react';
-import './banner.css';
-import ContactFormModal from '../Contact us/layout';
+import React from "react";
+import "./banner.css";
 
-const ProjectBanner: React.FC = () => {
-  const [showModal, setShowModal] = React.useState(false);
+const ProjectSection: React.FC = () => {
   return (
-    <div className="project-banner">
-      <div className="content">
-      <h1 className="title">Have a Project in Mind?</h1>
-        <button className="cta-button" onClick={() => setShowModal(true)}>Get in touch</button>
-        {showModal && <ContactFormModal isVisible={showModal} onClose={() => setShowModal(false)} />}
+    <div className="project-container">
+      <div className="project-text">
+        <h2>Have a Project in Mind?</h2>
+        <button className="project-button">Get in touch</button>
       </div>
-      <div className="image-section">
-        <img
-          src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737062889/0e59d351e04e3a8c6c6e33aa8d37477e_tvyfkm.jpg"
-          alt="Woman thinking with a light bulb"
-          className="banner-image"
-        />
+      <div className="project-image">
+        <img src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737062889/0e59d351e04e3a8c6c6e33aa8d37477e_tvyfkm.jpg"  alt="Creative Thinking" />
       </div>
     </div>
   );
 };
 
-export default ProjectBanner;
+export default ProjectSection;

@@ -1,61 +1,81 @@
 .ai-ml-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
   color: #333;
   line-height: 1.6;
 }
 
+/* Heading and Subheading Layout */
+.ai-ml-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* AI & Machine Learning Heading */
 .ai-ml-heading {
-  font-size: clamp(2rem, 5vw, 2.5rem); /* Dynamic scaling for all screen sizes */
-  font-weight: 900;
-  margin-bottom: 10px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: bold;
   color: #000;
-  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  margin-left: 60px;
 }
 
+.ai-bold {
+  display: block;
+  font-weight: 900;
+}
+
+
+
+/* Subheading positioned to the right */
 .ai-ml-subheading {
-  font-size: clamp(1rem, 2vw, 1.25rem); /* Dynamic scaling */
+  max-width: 600px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 700;
-  margin-bottom: 30px;
   color: #555;
-  line-height: 1.8;
-  text-align: center;
+  line-height: 1.6;
+  text-align: left;
 }
 
+/* Content layout: image on left, text on right */
 .ai-ml-content {
   display: flex;
-  flex-wrap: wrap; /* Flex-wrap for responsive behavior */
-  align-items: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 30px;
-  margin-bottom: 40px;
 }
 
+/* Image container */
 .ai-ml-image {
   flex: 1;
-  max-width: 30%;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  object-fit: cover; /* Ensures image scaling */
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
 }
 
 .ai-ml-details {
   flex: 2;
+  max-width: 55%;
+  margin-left: 60px;
 }
 
+/* Offerings */
 .ai-ml-details h2 {
-  font-size: clamp(1.5rem, 3vw, 2rem); /* Responsive font size */
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 900;
-  margin-bottom: 15px;
   color: #000;
 }
 
 .ai-ml-details ul {
   font-size: clamp(1rem, 2vw, 1.125rem);
   list-style-type: disc;
-  margin: 10px 0 0 20px;
-  padding: 0;
-  color: #333;
+  margin-left: 20px;
 }
 
 .ai-ml-details li {
@@ -63,24 +83,23 @@
   line-height: 1.6;
 }
 
+/* Footer Section */
 .ai-ml-footer {
+  margin-left: 60px;
   margin-top: 40px;
 }
 
 .ai-ml-footer h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 900;
-  margin-bottom: 10px;
   color: #000;
 }
 
 .ai-ml-footer ul {
   list-style-type: disc;
-  margin: 10px 0 0 20px;
-  padding: 0;
+  margin-left: 20px;
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 600;
-  color: #333;
 }
 
 .ai-ml-footer p {
@@ -99,70 +118,74 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .ai-ml-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ai-ml-subheading {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
   .ai-ml-content {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
   }
 
   .ai-ml-image {
     max-width: 100%;
-    margin-bottom: 20px;
   }
 
-  .ai-ml-heading {
-    font-size: 36px;
-  }
-
-  .ai-ml-subheading {
-    font-size: 16px;
+  .ai-ml-details {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   .ai-ml-container {
-    padding: 15px;
+    padding: 20px;
   }
 
-  .ai-ml-details h2 {
-    font-size: 22px;
+  .ai-ml-heading {
+    font-size: 28px;
   }
 
-  .ai-ml-details ul {
+  .ai-ml-subheading {
     font-size: 16px;
   }
 
+  .ai-ml-details h2,
   .ai-ml-footer h2 {
     font-size: 22px;
+  }
+
+  .ai-ml-details ul,
+  .ai-ml-footer ul {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .ai-ml-heading {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .ai-ml-subheading {
     font-size: 14px;
   }
 
-  .ai-ml-details h2 {
-    font-size: 20px;
-  }
-
-  .ai-ml-details ul {
-    font-size: 14px;
-  }
-
+  .ai-ml-details h2,
   .ai-ml-footer h2 {
     font-size: 20px;
   }
 
+  .ai-ml-details ul,
   .ai-ml-footer ul {
     font-size: 14px;
   }
 
   .ai-ml-footer p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }

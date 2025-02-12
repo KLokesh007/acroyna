@@ -6,46 +6,50 @@
     line-height: 1.6;
 }
 
+/* Updated Header Layout */
+.qualityassurance-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
 .qualityassurance-heading {
-    font-size: clamp(2rem, 5vw, 2.5rem); /* Responsive font size */
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 900;
-    margin-bottom: 10px;
     color: #000;
-    text-align: center;
+    text-align: left;
+    flex: 1;
+    margin-left: 60px;
 }
 
 .qualityassurance-subheading {
-    font-size: clamp(1rem, 2vw, 1.25rem); /* Responsive font size */
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 700;
-    margin-bottom: 30px;
     color: #555;
     line-height: 1.8;
-    text-align: center;
+    text-align: left;
+    flex: 2;
 }
 
+/* Content Layout */
 .qualityassurance-content {
-    display: flex;
-    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
-    align-items: flex-start;
-    gap: 30px;
-    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
 }
 
-.qualityassurance-image {
-    flex: 1;
-    max-width: 40%;
-    margin-top: -30px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
+/* Details Section */
 .qualityassurance-details {
     flex: 1;
     margin-top: 40px;
+    margin-left: 60px;
 }
 
 .qualityassurance-details h2 {
-    font-size: clamp(1.75rem, 4vw, 2rem); /* Responsive font size */
+    font-size: clamp(1.75rem, 4vw, 2rem);
     font-weight: 900;
     margin-bottom: 15px;
     color: #000;
@@ -64,12 +68,33 @@
     line-height: 1.6;
 }
 
-.qualityassurance-footer {
-    margin-top: 40px;
+/* Animation Section */
+.qualityassurance-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.qualityassurance-animation > div {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+}
+
+/* Hidden animation in desktop, shown in responsive */
+.qualityassurance-animation-responsive {
+    display: none;
+}
+
+/* Footer Section */
+.qualityassurance-footer 
+{
+    margin-left: 60px;
 }
 
 .qualityassurance-footer h2 {
-    font-size: clamp(1.75rem, 4vw, 2rem); /* Responsive font size */
+    font-size: clamp(1.75rem, 4vw, 2rem);
     font-weight: 900;
     margin-bottom: 10px;
     color: #000;
@@ -79,7 +104,7 @@
     list-style-type: disc;
     margin: 10px 0 0 20px;
     padding: 0;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     font-weight: 600;
     color: #333;
 }
@@ -87,87 +112,81 @@
 .qualityassurance-footer p {
     margin-top: 15px;
     font-weight: 500;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     color: #555;
     line-height: 1.7;
 }
 
-.qualityassurance-footer i {
-    font-weight: 600;
-    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Responsive font size */
-    color: #888;
-}
-
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-    .qualityassurance-content {
-        flex-direction: column; /* Stack content on smaller screens */
-        gap: 20px;
-    }
-
-    .qualityassurance-image {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .qualityassurance-details {
-        flex: 1;
-        margin-left: 0;
+    .qualityassurance-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
     }
 
     .qualityassurance-heading {
-        font-size: 36px;
+        font-size: 3rem;
+        text-align: center;
     }
 
     .qualityassurance-subheading {
-        font-size: 16px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .qualityassurance-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .qualityassurance-animation {
+        display: none;
+    }
+
+    .qualityassurance-animation-responsive {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .qualityassurance-animation-responsive > div {
+        width: 100%;
+        max-width: 500px;
+        height: 500px;
     }
 }
 
 @media (max-width: 768px) {
+    .qualityassurance-container {
+        padding: 2rem 1rem;
+    }
+
     .qualityassurance-heading {
-        font-size: 32px;
+        font-size: 2.5rem;
     }
 
-    .qualityassurance-subheading {
-        font-size: 15px;
+    .qualityassurance-footer h2 {
+        font-size: 1.75rem;
     }
 
-    .qualityassurance-details h2 {
-        font-size: 22px;
+    .qualityassurance-footer ul,
+    .qualityassurance-subheading,
+    .qualityassurance-footer p {
+        font-size: 1rem;
     }
 
-    .qualityassurance-details ul {
-        font-size: 16px;
+    .qualityassurance-animation-responsive > div {
+        height: 400px;
     }
 }
 
 @media (max-width: 480px) {
     .qualityassurance-heading {
-        font-size: 28px;
+        font-size: 2rem;
     }
 
-    .qualityassurance-subheading {
-        font-size: 14px;
-    }
-
-    .qualityassurance-details h2 {
-        font-size: 20px;
-    }
-
-    .qualityassurance-details ul {
-        font-size: 14px;
-    }
-
-    .qualityassurance-footer h2 {
-        font-size: 20px;
-    }
-
-    .qualityassurance-footer ul {
-        font-size: 14px;
-    }
-
-    .qualityassurance-footer p {
-        font-size: 16px;
+    .qualityassurance-animation-responsive > div {
+        height: 300px;
     }
 }

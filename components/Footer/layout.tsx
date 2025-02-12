@@ -13,8 +13,8 @@ export default function Footer() {
         
         <div className="footer-content">
           <div className="footer-contact">
-            <p>Reach Out@+91 0000555500</p>
-            <p>hello@acroyasoftwaresolutions.com</p>
+            <p>Reach Out@ +919661578666, +916201498 087</p>
+            <p>acroyna@gmail.com</p>
           </div>
           
           <div className="footer-links">
