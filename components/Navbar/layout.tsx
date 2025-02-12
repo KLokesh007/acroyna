@@ -116,7 +116,7 @@ export default function Navbar() {
             ×
           </button>
         </div>
-        <a href="/">Work</a>
+        <a href="/#CaseStudy"onClick={() => setIsMenuOpen(false)}>Work</a>
         <a href="/Aboutus">About Us</a>
         <a href="/#Services" onClick={() => setIsMenuOpen(false)}>Services</a>
         <a href="/CareerSection">Careers</a>
