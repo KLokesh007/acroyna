@@ -12,12 +12,8 @@ export default function CHeroSection() {
   return (
     <section className="chero-container">
       <div className="chero-content">
-        <div className="chero-image">
-          <LottieAnimation
-            animationPath="/lottie/Career1.json" // Animation for another use
-            loop={true}
-            autoplay={true}
-          />
+      <div className="chero-image">
+          <LottieAnimation animationPath="/lottie/career1.json" loop autoplay />
         </div>
         <div className="chero-text">
           <h1 className="chero-title">Come work at Acroyna.</h1>
