@@ -97,7 +97,7 @@ export default function About() {
               />
               <img
                 className="trusted1-logo"
-                src="/images/merage.png"
+                src="https://res.cloudinary.com/dt5grsivq/image/upload/v1739051382/merage_suubzs.jpg"
                 alt="Placeholder Logo 2"
               />
             </div>
