@@ -11,7 +11,7 @@ const Getway: React.FC = () => {
 
             <div className="dashboard-image-container">
                 <img
-                    src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737061156/16_t0xmvr.png"
+                    src="/Images/casestudies/getway.png"
                     alt="Dashboard Overview"
                     className="dashboard-image" />
             </div>

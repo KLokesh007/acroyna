@@ -13,7 +13,7 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    logo: "https://res.cloudinary.com/dt5grsivq/image/upload/v1736801385/alba_mart_yttys4.png",
+    logo: "/Images/alba mart.png",
     text: "We are thoroughly impressed with the e-commerce trading website developed by Acroyna Solutions. The platform offers a smooth and efficient trading experience, with easy product listing management and secure transaction features.",
     author: {
       name: "Jahangir Alam",
@@ -22,7 +22,7 @@ const testimonials: TestimonialProps[] = [
     }
   },
   {
-    logo: "https://res.cloudinary.com/dt5grsivq/image/upload/v1737369654/jyps_vhy9os.jpg",
+    logo: "/Images/jyps.png",
     text: "Partnering with Acroyna Solutions to develop our e-commerce trading website was a game-changer. The platform is not just functional but intuitive, creating a flawless trading experience for our users.",
     author: {
       name: "Shubham Kumar",
@@ -31,7 +31,7 @@ const testimonials: TestimonialProps[] = [
     }
   },
   {
-    logo: "https://res.cloudinary.com/dt5grsivq/image/upload/v1739051382/merage_suubzs.jpg",
+    logo: "/Images/merage.png",
     text: "We had an amazing experience with Acroyna Solutions. They understood our requirements perfectly and delivered a feature-rich platform that is both scalable and user-friendly.",
     author: {
       name: "Satyam Rai",

@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="logo-container">
         <a href="/">
           <img
-            src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737187370/Acroyna_i5qex2.jpg"
+            src="/Images/Acroyna.jpeg"
             alt="Acroyna Logo"
             className="logo-image"
           />
@@ -106,7 +106,7 @@ export default function Navbar() {
           <div className="logo-container">
             <a href="/">
               <img
-                src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737187370/Acroyna_i5qex2.jpg"
+                src="/Images/Acroyna.jpeg"
                 alt="Acroyna Logo"
                 className="logo-image"
               />

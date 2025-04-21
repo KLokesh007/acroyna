@@ -23,7 +23,7 @@ export default function About() {
             <div className="member-image-container">
               <img
                 // src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736874898/meraj_r6mnov.jpg"
-                src='https://res.cloudinary.com/dt5grsivq/image/upload/v1740288089/IMG_2591_dzdhym.jpg'
+                src='/Images/about/habibullah.jpeg'
                 alt="Co-Founder & CEO"
                 width={300}
                 height={400}
@@ -59,7 +59,7 @@ export default function About() {
           <div className="team-member">
             <div className="member-image-container">
               <img
-                src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736874909/2nd_wbfzyj.jpg"
+                src="/Images/about/najmus.jpeg"
                 alt="Co-Founder & CEO"
                 width={300}
                 height={400}
@@ -87,17 +87,17 @@ export default function About() {
             <div className="trusted1-logos">
               <img
                 className="trusted1-logo"
-                src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736801385/alba_mart_yttys4.png"
+                src="/Images/alba mart.png"
                 alt="Alba Mart Logo"
               />
               <img
                 className="trusted1-logo"
-                src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737369654/jyps_vhy9os.jpg"
+                src="/Images/jyps.png"
                 alt="Placeholder Logo 1"
               />
               <img
                 className="trusted1-logo"
-                src="https://res.cloudinary.com/dt5grsivq/image/upload/v1739051382/merage_suubzs.jpg"
+                src="/Images/merage.png"
                 alt="Placeholder Logo 2"
               />
             </div>

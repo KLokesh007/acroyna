@@ -15,7 +15,7 @@ export default function CaseStudy() {
         <div className="case-study-card">
           <div className="case-study-image" onClick={() => window.location.href = '/CaseStudies/CaseStudy1'}>
             <img
-              src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736806700/Mockup_7_jqiw8d.png"
+              src="/Images/casestudies/albamartcase.png"
               alt="Alba Mart mobile app interface screenshots"
               className="case-study-img"
             />
@@ -48,7 +48,7 @@ export default function CaseStudy() {
           </div>
           <div className="case-study-image" onClick={() => window.location.href = '/CaseStudies/CaseStudy2'}>
             <img
-              src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736809365/11_wmpcw4.png"
+              src="/Images/casestudies/albamartadmin.jpeg"
               alt="Alba Mart mobile app interface screenshots"
               className="case-study-img"
             />
@@ -58,7 +58,7 @@ export default function CaseStudy() {
         <div className="case-study-card">
           <div className="case-study-image" onClick={() => window.location.href = '/CaseStudies/CaseStudy3'}>
             <img
-              src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736807049/Capture_r1x9nl.png"
+              src="/Images/casestudies/vtu.png"
               alt="Alba Mart mobile app interface screenshots"
               className="case-study-img"
             />
@@ -93,7 +93,7 @@ export default function CaseStudy() {
           </div>
           <div className="case-study-image"onClick={() => window.location.href = '/CaseStudies/CaseStudy4'}>
             <img
-              src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736807049/1_pg5mdv.png"
+              src="/Images/casestudies/gateway.png"
               alt="Alba Mart mobile app interface screenshots"
               className="case-study-img"
             />

@@ -53,17 +53,17 @@ export default function HeroSection() {
           <div className="trusted-logos">
             <img
               className="trusted-logo"
-              src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736801385/alba_mart_yttys4.png"
+              src="/Images/alba mart.png"
               alt="Alba Mart Logo"
             />
             <img
               className="trusted-logo"
-              src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737369654/jyps_vhy9os.jpg"
+              src="/Images/jyps.png"
               alt="Placeholder Logo 1"
             />
             <img
               className="trusted-logo"
-              src="https://res.cloudinary.com/dt5grsivq/image/upload/v1739051382/merage_suubzs.jpg"
+              src="/Images/merage.png"
               alt="Placeholder Logo 2"
             />
           </div>

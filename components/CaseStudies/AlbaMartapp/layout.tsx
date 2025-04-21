@@ -6,7 +6,7 @@ const AlbaMartOverview = () => {
         <div className="overview-container">
             <div className="overview-mockup-container">
         <img
-          src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736806700/Mockup_7_jqiw8d.png"
+          src="/Images/casestudies/albamartcase.png"
           alt="Alba Mart Mockup"
           className="overview-mockup-image"
         />
@@ -85,7 +85,7 @@ const AlbaMartOverview = () => {
             </div>
             <div className="overview-image-container">
         <img
-          src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737052693/Screenshot_2025-01-17_000729_efawke.png"
+          src="/Images/casestudies/albamart1.png"
           alt="Alba Mart Screenshot"
           className="overview-image"
         />

@@ -1,7 +1,7 @@
 /* Center the overview mockup container */
 .overview-mockup-container {
   display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
+  /* justify-content: center; Center horizontally */
   align-items: center; /* Center vertically */
   margin-bottom: 50px; /* Add spacing below */
   margin-right: 200px; /* Space for large screens */

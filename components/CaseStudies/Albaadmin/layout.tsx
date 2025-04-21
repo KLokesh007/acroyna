@@ -12,7 +12,7 @@ const AdminDashboard: React.FC = () => {
 
             <div className="dashboard-image-container">
                 <img
-                    src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737056786/Group_1309_wyfbzx.png"
+                    src="/Images/casestudies/albaadmi1.png"
                     alt="Dashboard Overview"
                     className="dashboard-image" />
             </div>
@@ -98,7 +98,7 @@ const AdminDashboard: React.FC = () => {
                 </div>
             </div><div className="overview-image-container">
                 <img
-                    src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737056786/Group_1309_wyfbzx.png"
+                    src="/Images/casestudies/albaadmi2.png"
                     alt="Alba Mart Screenshot"
                     className="overview-image" />
             </div></>

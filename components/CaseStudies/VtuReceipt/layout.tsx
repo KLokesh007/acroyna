@@ -11,7 +11,7 @@ const VTU: React.FC = () => {
 
             <div className="dashboard-image-container">
                 <img
-                    src="https://res.cloudinary.com/dt5grsivq/image/upload/v1737060348/Capture_monuta.png"
+                    src="/Images/casestudies/vtu.png"
                     alt="Dashboard Overview"
                     className="dashboard-image" />
             </div>
