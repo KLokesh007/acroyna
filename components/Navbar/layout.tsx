@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="logo-container">
         <a href="/">
           <img
-            src="/Images/Acroyna.jpeg"
+            src="/Images/acroyna.jpeg"
             alt="Acroyna Logo"
             className="logo-image"
           />
@@ -106,7 +106,7 @@ export default function Navbar() {
           <div className="logo-container">
             <a href="/">
               <img
-                src="/Images/Acroyna.jpeg"
+                src="/Images/acroyna.jpeg"
                 alt="Acroyna Logo"
                 className="logo-image"
               />
