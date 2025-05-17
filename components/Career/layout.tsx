@@ -60,7 +60,7 @@ export default function CareersPage() {
 
         <div className="illustration">
           <img
-            src="https://res.cloudinary.com/dt5grsivq/image/upload/v1736881825/ll2_vydduz.png"
+            src="/Images/career.png"
             alt="Developer illustration"
             width={300}
             height={400}
